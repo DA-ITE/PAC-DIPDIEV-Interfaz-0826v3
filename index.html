@@ -1,7 +1,6 @@
 <div id="sise-dipdiev-home">
 
 <style>
-
 #sise-dipdiev-home{
   --pink:#FF0050;
   --pink-light:#FF4B80;
@@ -1218,157 +1217,6 @@
     padding-right:20px;
   }
 }
-
-
-
-/* =========================================================
-   AJUSTES ESPECIFICOS · DIPDIEV
-========================================================= */
-#sise-dipdiev-home .sise-navigation{
-  grid-template-columns:repeat(4,1fr);
-}
-
-#sise-dipdiev-home .sise-module-card{
-  min-height:430px;
-}
-
-#sise-dipdiev-home .sise-module-description{
-  position:relative;
-  z-index:2;
-  margin:0 0 16px;
-  color:rgba(255,255,255,.82);
-  font-size:14px;
-  line-height:1.55;
-}
-
-#sise-dipdiev-home .sise-module-topics{
-  position:relative;
-  z-index:2;
-  margin:0 0 22px;
-  padding:16px 17px;
-  border:1px solid rgba(255,255,255,.09);
-  border-radius:12px;
-  background:rgba(255,255,255,.045);
-}
-
-#sise-dipdiev-home .sise-module-topics strong{
-  display:block;
-  margin-bottom:8px;
-  color:#FF7CA5;
-  font-size:12px;
-  letter-spacing:.7px;
-  text-transform:uppercase;
-}
-
-#sise-dipdiev-home .sise-module-topics ul{
-  margin:0;
-  padding-left:18px;
-  color:rgba(255,255,255,.72);
-  font-size:12.5px;
-  line-height:1.5;
-}
-
-#sise-dipdiev-home .sise-module-topics li{
-  margin:5px 0;
-}
-
-#sise-dipdiev-home .sise-evaluation-card{
-  min-height:265px;
-}
-
-#sise-dipdiev-home .sise-download-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:14px;
-  margin:4px 0 20px;
-}
-
-#sise-dipdiev-home .sise-download-card{
-  display:flex;
-  align-items:center;
-  gap:14px;
-  padding:18px 19px;
-  border:1px solid #E9E1E4;
-  border-radius:13px;
-  background:#FFFFFF;
-  box-shadow:0 8px 20px rgba(35,31,32,.05);
-}
-
-#sise-dipdiev-home .sise-download-icon{
-  display:flex;
-  flex:0 0 38px;
-  align-items:center;
-  justify-content:center;
-  width:38px;
-  height:38px;
-  border-radius:50%;
-  color:#FFFFFF;
-  background:linear-gradient(135deg,#FF0050,#FF467B);
-  font-size:16px;
-  font-weight:900;
-}
-
-#sise-dipdiev-home .sise-download-card strong{
-  color:#231F20;
-  font-size:14px;
-  line-height:1.35;
-}
-
-#sise-dipdiev-home .sise-download-actions{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-}
-
-#sise-dipdiev-home .sise-download-actions .sise-btn-primary{
-  min-height:46px;
-  padding:12px 19px;
-  font-size:14px;
-}
-
-#sise-dipdiev-home .sise-btn-secondary{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  min-height:46px;
-  padding:12px 19px;
-  border-radius:9px;
-  color:#FFFFFF;
-  background:var(--dark-2);
-  text-decoration:none;
-  font-size:14px;
-  font-weight:800;
-}
-
-#sise-dipdiev-home .sise-btn-secondary:hover{
-  color:#FFFFFF;
-  background:var(--pink);
-  transform:translateY(-2px);
-}
-
-@media screen and (max-width:900px){
-  #sise-dipdiev-home .sise-navigation{
-    grid-template-columns:repeat(2,1fr);
-  }
-  #sise-dipdiev-home .sise-module-card{
-    min-height:auto;
-  }
-}
-
-@media screen and (max-width:540px){
-  #sise-dipdiev-home .sise-navigation,
-  #sise-dipdiev-home .sise-download-grid{
-    grid-template-columns:1fr;
-  }
-  #sise-dipdiev-home .sise-download-actions{
-    display:grid;
-    grid-template-columns:1fr;
-  }
-  #sise-dipdiev-home .sise-download-actions a{
-    width:100%;
-  }
-}
-
 </style>
 
 <!-- =========================================================
@@ -1463,28 +1311,32 @@
      NAVEGACIÓN
 ========================================================= -->
 <div class="sise-container" id="sise-contenido-dinamico">
+
   <div class="sise-intro">
     <p>
-      <strong>Instrucción:</strong> selecciona uno de los botones para consultar la información del curso. El contenido se mostrará en una única caja dinámica.
+      <strong>Instrucción:</strong>
+      selecciona uno de los botones para consultar la información.
+      El contenido se mostrará en una única caja dinámica.
     </p>
   </div>
 
   <div class="sise-navigation" role="tablist" aria-label="Secciones del curso">
     <button type="button" class="sise-nav-button active" data-section="sobre-curso" role="tab" aria-selected="true">
-      <span class="sise-nav-icon">i</span> Sobre el curso
+      <span class="sise-nav-icon">i</span>
+      Sobre el curso
     </button>
+
     <button type="button" class="sise-nav-button" data-section="modulos" role="tab" aria-selected="false">
-      <span class="sise-nav-icon">☰</span> Módulos
+      <span class="sise-nav-icon">☰</span>
+      Módulos
     </button>
+
     <button type="button" class="sise-nav-button" data-section="evaluacion" role="tab" aria-selected="false">
-      <span class="sise-nav-icon">✓</span> Evaluación
-    </button>
-    <button type="button" class="sise-nav-button" data-section="descargables" role="tab" aria-selected="false">
-      <span class="sise-nav-icon">↓</span> Descargables
+      <span class="sise-nav-icon">✓</span>
+      Evaluación
     </button>
   </div>
 
-  <!-- CAJA DINÁMICA INICIAL -->
   <section class="sise-dynamic-box" aria-live="polite" aria-atomic="true">
     <div class="sise-dynamic-header">
       <span class="sise-dynamic-kicker" id="sise-dynamic-kicker">Información general</span>
@@ -1492,27 +1344,46 @@
     </div>
 
     <div class="sise-dynamic-body" id="sise-dynamic-body">
-      <h3 class="sise-section-title"><span class="sise-title-number">01</span>Descripción del curso</h3>
+<h3 class="sise-section-title">
+        <span class="sise-title-number">01</span>
+        Descripción del curso
+      </h3>
+
       <p>
         En este curso analizarás el sílabo desde una perspectiva pedagógica para convertirlo en una herramienta real de planificación. Trabajarás la relación entre competencias, resultados de aprendizaje, desempeños observables y evidencias, aplicando la lógica del diseño inverso para fortalecer la coherencia de un curso propio.
       </p>
+
       <p>
         La experiencia se desarrolla mediante <strong>Action Mapping</strong>, aprendizaje basado en escenarios y <strong>microlearning</strong>, priorizando decisiones y acciones aplicadas sobre tu propio sílabo.
       </p>
 
-      <h3 class="sise-section-title"><span class="sise-title-number">02</span>¿A quiénes está dirigido?</h3>
+      <h3 class="sise-section-title">
+        <span class="sise-title-number">02</span>
+        ¿A quiénes está dirigido?
+      </h3>
+
       <div class="sise-audience-card">
-        <p><strong>Docentes SISE participantes del PAC Docente</strong>, en modalidad online asíncrona, que buscan fortalecer la planificación de sus cursos desde un enfoque por competencias y centrado en el desempeño.</p>
+        <p>
+          <strong>Docentes SISE participantes del PAC Docente</strong>, en modalidad online asíncrona, que buscan fortalecer la planificación de sus cursos desde un enfoque por competencias y centrado en el desempeño.
+        </p>
       </div>
 
-      <h3 class="sise-section-title"><span class="sise-title-number">03</span>Logro del curso</h3>
+      <h3 class="sise-section-title">
+        <span class="sise-title-number">03</span>
+        Logro del curso
+      </h3>
+
       <div class="sise-goal-card">
         <p>
           Diseñarás la alineación pedagógica de un curso propio, traduciendo competencias y resultados de aprendizaje en desempeños observables y evidencias coherentes bajo la lógica del diseño inverso, para planificar experiencias centradas en el desempeño en entornos virtuales.
         </p>
       </div>
 
-      <h3 class="sise-section-title"><span class="sise-title-number">04</span>Competencia a desarrollar</h3>
+      <h3 class="sise-section-title">
+        <span class="sise-title-number">04</span>
+        Competencia a desarrollar
+      </h3>
+
       <div class="sise-competence">
         <strong>C2 · Competencias Pedagógicas</strong>
         <p>
@@ -1522,95 +1393,106 @@
     </div>
   </section>
 
-  <!-- SOBRE EL CURSO -->
   <div id="sise-template-sobre-curso" class="sise-template" data-kicker="Información general" data-title="Conoce el propósito del curso">
-    <h3 class="sise-section-title"><span class="sise-title-number">01</span>Descripción del curso</h3>
-    <p>
-      En este curso analizarás el sílabo desde una perspectiva pedagógica para convertirlo en una herramienta real de planificación. Trabajarás la relación entre competencias, resultados de aprendizaje, desempeños observables y evidencias, aplicando la lógica del diseño inverso para fortalecer la coherencia de un curso propio.
-    </p>
-    <p>
-      La experiencia se desarrolla mediante <strong>Action Mapping</strong>, aprendizaje basado en escenarios y <strong>microlearning</strong>, priorizando decisiones y acciones aplicadas sobre tu propio sílabo.
-    </p>
+<h3 class="sise-section-title">
+        <span class="sise-title-number">01</span>
+        Descripción del curso
+      </h3>
 
-    <h3 class="sise-section-title"><span class="sise-title-number">02</span>¿A quiénes está dirigido?</h3>
-    <div class="sise-audience-card">
-      <p><strong>Docentes SISE participantes del PAC Docente</strong>, en modalidad online asíncrona, que buscan fortalecer la planificación de sus cursos desde un enfoque por competencias y centrado en el desempeño.</p>
-    </div>
-
-    <h3 class="sise-section-title"><span class="sise-title-number">03</span>Logro del curso</h3>
-    <div class="sise-goal-card">
       <p>
-        Diseñarás la alineación pedagógica de un curso propio, traduciendo competencias y resultados de aprendizaje en desempeños observables y evidencias coherentes bajo la lógica del diseño inverso, para planificar experiencias centradas en el desempeño en entornos virtuales.
+        En este curso analizarás el sílabo desde una perspectiva pedagógica para convertirlo en una herramienta real de planificación. Trabajarás la relación entre competencias, resultados de aprendizaje, desempeños observables y evidencias, aplicando la lógica del diseño inverso para fortalecer la coherencia de un curso propio.
       </p>
-    </div>
 
-    <h3 class="sise-section-title"><span class="sise-title-number">04</span>Competencia a desarrollar</h3>
-    <div class="sise-competence">
-      <strong>C2 · Competencias Pedagógicas</strong>
       <p>
-        El curso fortalece la planificación pedagógica mediante la lectura del sílabo, la articulación de competencias y resultados de aprendizaje, y la construcción de desempeños y evidencias coherentes con el resultado esperado.
+        La experiencia se desarrolla mediante <strong>Action Mapping</strong>, aprendizaje basado en escenarios y <strong>microlearning</strong>, priorizando decisiones y acciones aplicadas sobre tu propio sílabo.
       </p>
-    </div>
+
+      <h3 class="sise-section-title">
+        <span class="sise-title-number">02</span>
+        ¿A quiénes está dirigido?
+      </h3>
+
+      <div class="sise-audience-card">
+        <p>
+          <strong>Docentes SISE participantes del PAC Docente</strong>, en modalidad online asíncrona, que buscan fortalecer la planificación de sus cursos desde un enfoque por competencias y centrado en el desempeño.
+        </p>
+      </div>
+
+      <h3 class="sise-section-title">
+        <span class="sise-title-number">03</span>
+        Logro del curso
+      </h3>
+
+      <div class="sise-goal-card">
+        <p>
+          Diseñarás la alineación pedagógica de un curso propio, traduciendo competencias y resultados de aprendizaje en desempeños observables y evidencias coherentes bajo la lógica del diseño inverso, para planificar experiencias centradas en el desempeño en entornos virtuales.
+        </p>
+      </div>
+
+      <h3 class="sise-section-title">
+        <span class="sise-title-number">04</span>
+        Competencia a desarrollar
+      </h3>
+
+      <div class="sise-competence">
+        <strong>C2 · Competencias Pedagógicas</strong>
+        <p>
+          El curso fortalece la planificación pedagógica mediante la lectura del sílabo, la articulación de competencias y resultados de aprendizaje, y la construcción de desempeños y evidencias coherentes con el resultado esperado.
+        </p>
+      </div>
   </div>
 
-  <!-- MÓDULOS -->
   <div id="sise-template-modulos" class="sise-template" data-kicker="Ruta de aprendizaje" data-title="Ingresa a tus módulos">
-    <p>
+<p>
       Avanza por los dos módulos de manera progresiva. Primero analizarás la coherencia de tu sílabo y luego transformarás competencias y resultados de aprendizaje en desempeños y evidencias alineadas.
     </p>
 
     <div class="sise-modules-grid">
+
       <article class="sise-module-card">
         <div class="sise-module-top">
           <div class="sise-module-number">1</div>
-          <div class="sise-module-label">Primer módulo</div>
+          <div class="sise-module-label">Módulo 1</div>
         </div>
+
         <h3>El sílabo como herramienta de planificación</h3>
-        <p class="sise-module-description">
+
+        <p class="sise-module-help">
           Analiza los componentes del sílabo y su relación con el enfoque por competencias, reconociéndolo como herramienta de planificación pedagógica mediante el análisis guiado de un sílabo institucional real.
         </p>
-        <div class="sise-module-topics">
-          <strong>Temas del módulo</strong>
-          <ul>
-            <li>Estructura, componentes y finalidad pedagógica del sílabo.</li>
-            <li>Competencias, resultados de aprendizaje y evidencias.</li>
-            <li>Relación entre elementos, errores frecuentes y buenas prácticas.</li>
-            <li>Evidencia: diagnóstico de alineación del propio sílabo.</li>
-          </ul>
-        </div>
-        <a class="sise-module-btn" href="https://aulad.educad.pe/courses/672/modules/1924">Iniciar módulo 1&nbsp; →</a>
+
+        <a class="sise-module-btn" href="https://aulad.educad.pe/courses/672/modules/1924">
+          Iniciar módulo 1&nbsp; →
+        </a>
       </article>
 
       <article class="sise-module-card">
         <div class="sise-module-top">
           <div class="sise-module-number">2</div>
-          <div class="sise-module-label">Segundo módulo</div>
+          <div class="sise-module-label">Módulo 2</div>
         </div>
+
         <h3>De la competencia al desempeño observable</h3>
-        <p class="sise-module-description">
+
+        <p class="sise-module-help">
           Traduce competencias y resultados en desempeños observables y construye la matriz de alineación integral de tu curso, aplicando diseño inverso y coevaluación con rúbrica.
         </p>
-        <div class="sise-module-topics">
-          <strong>Temas del módulo</strong>
-          <ul>
-            <li>Interpretación de competencias y resultados de aprendizaje.</li>
-            <li>Desempeños observables, indicadores y verbos de acción.</li>
-            <li>Taxonomías de Bloom / Marzano, alineación constructiva y diseño inverso.</li>
-            <li>Evidencia: matriz de alineación competencia–desempeño.</li>
-          </ul>
-        </div>
-        <a class="sise-module-btn" href="https://aulad.educad.pe/courses/672/modules/1925">Iniciar módulo 2&nbsp; →</a>
+
+        <a class="sise-module-btn" href="https://aulad.educad.pe/courses/672/modules/1925">
+          Iniciar módulo 2&nbsp; →
+        </a>
       </article>
+
     </div>
   </div>
 
-  <!-- EVALUACIÓN -->
   <div id="sise-template-evaluacion" class="sise-template" data-kicker="Evidencias de aprendizaje" data-title="¿Cómo serás evaluado?">
-    <p>
+<p>
       Tu evaluación está centrada en la práctica y en productos construidos sobre tu propio curso. La fórmula indicada en el sílabo es: <strong>NF = 40% A1 + 60% Trabajo final.</strong>
     </p>
 
     <div class="sise-evaluation-grid">
+
       <article class="sise-evaluation-card">
         <div class="sise-evaluation-icon">40%</div>
         <h3>Actividad 1 · Diagnóstico de alineación</h3>
@@ -1634,6 +1516,7 @@
           Revisarás la matriz mediante una rúbrica de coevaluación y utilizarás el feedback recibido para mejorar la versión final de la alineación de tu curso.
         </p>
       </article>
+
     </div>
 
     <div class="sise-pass-card">
@@ -1644,33 +1527,12 @@
     </div>
   </div>
 
-  <!-- DESCARGABLES -->
-  <div id="sise-template-descargables" class="sise-template" data-kicker="Recursos de apoyo" data-title="Materiales para aplicar lo aprendido">
-    <p>
-      El curso contempla formatos descargables y ayudas de trabajo para aplicar la planificación directamente sobre tu propio curso.
-    </p>
-
-    <div class="sise-download-grid">
-      <div class="sise-download-card"><span class="sise-download-icon">↓</span><strong>Matriz de diagnóstico</strong></div>
-      <div class="sise-download-card"><span class="sise-download-icon">✓</span><strong>Checklist de alineación</strong></div>
-      <div class="sise-download-card"><span class="sise-download-icon">Aa</span><strong>Guía de verbos observables</strong></div>
-      <div class="sise-download-card"><span class="sise-download-icon">★</span><strong>Rúbrica de coevaluación</strong></div>
-    </div>
-
-    <div class="sise-download-actions">
-      <a class="sise-btn-primary" href="https://aulad.educad.pe/courses/672/modules">Ir al aula del curso&nbsp; →</a>
-      <a class="sise-btn-secondary" href="https://aulad.educad.pe/courses/672/files">Archivos del curso&nbsp; →</a>
-    </div>
-  </div>
 </div>
 
-<!-- =========================================================
-     JAVASCRIPT
-========================================================= -->
 <script>
 (function(){
   var component = document.getElementById("sise-dipdiev-home");
-  if(!component) return;
+  if(!component){ return; }
 
   var buttons = component.querySelectorAll(".sise-nav-button");
   var kicker = component.querySelector("#sise-dynamic-kicker");
@@ -1678,7 +1540,7 @@
   var body = component.querySelector("#sise-dynamic-body");
 
   function prepareExternalLinks(container){
-    if(!container) return;
+    if(!container){ return; }
     var links = container.querySelectorAll("a[href]");
     links.forEach(function(link){
       var href = link.getAttribute("href");
@@ -1691,7 +1553,7 @@
 
   function changeSection(section, selectedButton){
     var template = component.querySelector("#sise-template-" + section);
-    if(!template) return;
+    if(!template){ return; }
 
     kicker.textContent = template.getAttribute("data-kicker");
     title.textContent = template.getAttribute("data-title");
@@ -1700,18 +1562,19 @@
     body.offsetHeight;
     body.innerHTML = template.innerHTML;
     body.style.animation = "siseFadeIn .35s ease";
+
     prepareExternalLinks(body);
 
     buttons.forEach(function(button){
       var isActive = button === selectedButton;
-      button.classList.toggle("active",isActive);
-      button.setAttribute("aria-selected",isActive ? "true" : "false");
+      button.classList.toggle("active", isActive);
+      button.setAttribute("aria-selected", isActive ? "true" : "false");
     });
   }
 
   buttons.forEach(function(button){
-    button.addEventListener("click",function(){
-      changeSection(button.getAttribute("data-section"),button);
+    button.addEventListener("click", function(){
+      changeSection(button.getAttribute("data-section"), button);
     });
   });
 
