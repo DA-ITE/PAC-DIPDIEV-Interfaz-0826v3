@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Diseño inverso y planificación didáctica inteligente en entornos virtuales</title>
-</head>
-
-<body style="margin:0;background:#fff;">
-
-<div id="sise-diseno-inverso-home">
+<div id="sise-dipdiev-home">
 
 <style>
-#sise-diseno-inverso-home{
+
+#sise-dipdiev-home{
   --pink:#FF0050;
   --pink-light:#FF4B80;
   --pink-soft:#FFF0F5;
@@ -19,7 +10,6 @@
   --dark-2:#231F20;
   --dark-3:#30282C;
   --wine:#5A1830;
-  --wine-dark:#310917;
   --gray:#646064;
   --soft-gray:#F5F2F3;
   --border:#E9E1E4;
@@ -30,20 +20,20 @@
   padding:0 0 50px;
   color:var(--dark-2);
   background:#FFFFFF;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:Arial,Helvetica,sans-serif;
   line-height:1.5;
 }
 
-#sise-diseno-inverso-home *{
+#sise-dipdiev-home *{
   box-sizing:border-box;
 }
 
-#sise-diseno-inverso-home a,
-#sise-diseno-inverso-home button{
+#sise-dipdiev-home a,
+#sise-dipdiev-home button{
   transition:all .25s ease;
 }
 
-#sise-diseno-inverso-home .sise-container{
+#sise-dipdiev-home .sise-container{
   width:100%;
   max-width:1180px;
   margin:0 auto;
@@ -51,11 +41,12 @@
   padding-right:24px;
 }
 
+
 /* =========================================================
    PORTADA
-   ========================================================= */
+========================================================= */
 
-#sise-diseno-inverso-home .sise-hero{
+#sise-dipdiev-home .sise-hero{
   position:relative;
   overflow:hidden;
   padding:68px 0 110px;
@@ -66,7 +57,7 @@
     linear-gradient(125deg,#151314 0%,#241B1F 52%,#4A1026 100%);
 }
 
-#sise-diseno-inverso-home .sise-hero:before{
+#sise-dipdiev-home .sise-hero:before{
   content:"";
   position:absolute;
   width:430px;
@@ -77,7 +68,7 @@
   border-radius:50%;
 }
 
-#sise-diseno-inverso-home .sise-hero:after{
+#sise-dipdiev-home .sise-hero:after{
   content:"";
   position:absolute;
   width:235px;
@@ -88,7 +79,7 @@
   border-radius:50%;
 }
 
-#sise-diseno-inverso-home .sise-dot-pattern{
+#sise-dipdiev-home .sise-dot-pattern{
   position:absolute;
   left:24px;
   top:24px;
@@ -99,13 +90,13 @@
   background-size:16px 16px;
 }
 
-#sise-diseno-inverso-home .sise-hero-content{
+#sise-dipdiev-home .sise-hero-content{
   position:relative;
   z-index:2;
-  max-width:1000px;
+  max-width:900px;
 }
 
-#sise-diseno-inverso-home .sise-eyebrow{
+#sise-dipdiev-home .sise-eyebrow{
   display:inline-flex;
   align-items:center;
   gap:10px;
@@ -121,7 +112,7 @@
   text-transform:uppercase;
 }
 
-#sise-diseno-inverso-home .sise-eyebrow-dot{
+#sise-dipdiev-home .sise-eyebrow-dot{
   display:inline-block;
   width:9px;
   height:9px;
@@ -130,29 +121,29 @@
   box-shadow:0 0 0 5px rgba(255,0,80,.14);
 }
 
-#sise-diseno-inverso-home .sise-hero h1{
-  max-width:1000px;
+#sise-dipdiev-home .sise-hero h1{
+  max-width:940px;
   margin:0 0 20px;
   color:#FFFFFF;
-  font-size:clamp(40px,5.5vw,68px);
+  font-size:clamp(42px,6vw,72px);
   line-height:1.02;
   font-weight:900;
   letter-spacing:-2px;
 }
 
-#sise-diseno-inverso-home .sise-highlight{
+#sise-dipdiev-home .sise-highlight{
   color:var(--pink);
 }
 
-#sise-diseno-inverso-home .sise-hero-description{
-  max-width:850px;
+#sise-dipdiev-home .sise-hero-description{
+  max-width:790px;
   margin:0 0 32px;
   color:rgba(255,255,255,.86);
   font-size:20px;
   line-height:1.6;
 }
 
-#sise-diseno-inverso-home .sise-btn-primary{
+#sise-dipdiev-home .sise-btn-primary{
   display:inline-flex;
   align-items:center;
   justify-content:center;
@@ -167,82 +158,105 @@
   font-weight:700;
 }
 
-#sise-diseno-inverso-home .sise-btn-primary:hover{
+#sise-dipdiev-home .sise-btn-primary:hover{
   color:#FFFFFF;
   transform:translateY(-2px);
   box-shadow:0 18px 34px rgba(255,0,80,.32);
 }
 
+
 /* =========================================================
    DATOS DEL CURSO
-   ========================================================= */
+   COMPACTO Y EN UNA SOLA LÍNEA EN CANVAS
+========================================================= */
 
-#sise-diseno-inverso-home .sise-stats-wrap{
+#sise-dipdiev-home .sise-stats-wrap{
   position:relative;
   z-index:4;
-  max-width:1180px;
-  margin:-54px auto 42px;
-  padding:0 24px;
+  width:calc(100% - 32px);
+  max-width:840px;
+  margin:-38px auto 28px;
+  padding:0;
 }
 
-#sise-diseno-inverso-home .sise-stats{
+#sise-dipdiev-home .sise-stats{
   width:100%;
+  table-layout:fixed;
   overflow:hidden;
   border-collapse:separate;
   border-spacing:0;
   border:1px solid rgba(255,255,255,.12);
-  border-radius:18px;
+  border-radius:13px;
   background:linear-gradient(135deg,#211D1F 0%,#2A2226 100%);
-  box-shadow:0 18px 45px rgba(35,31,32,.18);
+  box-shadow:0 12px 26px rgba(35,31,32,.14);
 }
 
-#sise-diseno-inverso-home .sise-stats td{
+#sise-dipdiev-home .sise-stats tbody,
+#sise-dipdiev-home .sise-stats tr{
+  width:100%;
+}
+
+#sise-dipdiev-home .sise-stats td{
   width:20%;
-  padding:26px 18px;
+  padding:12px 6px 11px;
   color:#FFFFFF;
   text-align:center;
-  vertical-align:top;
-  border-right:1px solid rgba(255,255,255,.1);
+  vertical-align:middle;
+  border-right:1px solid rgba(255,255,255,.10);
 }
 
-#sise-diseno-inverso-home .sise-stats td:last-child{
+#sise-dipdiev-home .sise-stats td:last-child{
   border-right:none;
 }
 
-#sise-diseno-inverso-home .sise-stat-icon{
+#sise-dipdiev-home .sise-stat-icon{
   display:flex;
   align-items:center;
   justify-content:center;
-  width:46px;
-  height:46px;
-  margin:0 auto 13px;
+  width:32px;
+  height:32px;
+  margin:0 auto 7px;
   border-radius:50%;
   color:#FFFFFF;
   background:linear-gradient(135deg,#FF0050,#FF386F);
-  box-shadow:0 0 0 6px rgba(255,0,80,.1);
-  font-size:17px;
+  box-shadow:0 0 0 3px rgba(255,0,80,.10);
+  font-size:12px;
   font-weight:900;
 }
 
-#sise-diseno-inverso-home .sise-stat-value{
-  margin:0 0 4px;
-  color:#FFFFFF;
-  font-size:21px;
-  font-weight:800;
+#sise-dipdiev-home .sise-stat-icon svg{
+  width:16px;
+  height:16px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
 }
 
-#sise-diseno-inverso-home .sise-stat-label{
-  margin:0;
-  color:rgba(255,255,255,.67);
-  font-size:13px;
-  line-height:1.35;
+#sise-dipdiev-home .sise-stat-value{
+  margin:0 0 2px;
+  color:#FFFFFF;
+  font-size:15px;
+  line-height:1.15;
+  font-weight:800;
+  white-space:nowrap;
 }
+
+#sise-dipdiev-home .sise-stat-label{
+  margin:0 auto;
+  max-width:125px;
+  color:rgba(255,255,255,.65);
+  font-size:10px;
+  line-height:1.2;
+}
+
 
 /* =========================================================
    INSTRUCCIÓN
-   ========================================================= */
+========================================================= */
 
-#sise-diseno-inverso-home .sise-intro{
+#sise-dipdiev-home .sise-intro{
   margin-bottom:30px;
   padding:22px 25px;
   border-left:6px solid var(--pink);
@@ -250,25 +264,26 @@
   background:linear-gradient(90deg,#FFF0F5 0%,#FFF8FA 100%);
 }
 
-#sise-diseno-inverso-home .sise-intro p{
+#sise-dipdiev-home .sise-intro p{
   margin:0;
   color:#433B3E;
   font-size:17px;
   line-height:1.55;
 }
 
+
 /* =========================================================
    NAVEGACIÓN
-   ========================================================= */
+========================================================= */
 
-#sise-diseno-inverso-home .sise-navigation{
+#sise-dipdiev-home .sise-navigation{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(3,1fr);
   gap:12px;
   margin-bottom:18px;
 }
 
-#sise-diseno-inverso-home .sise-nav-button{
+#sise-dipdiev-home .sise-nav-button{
   display:flex;
   align-items:center;
   justify-content:center;
@@ -283,13 +298,13 @@
   background:#FFFFFF;
   box-shadow:0 7px 18px rgba(35,31,32,.06);
   cursor:pointer;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:Arial,Helvetica,sans-serif;
   font-size:15px;
   font-weight:800;
   text-align:center;
 }
 
-#sise-diseno-inverso-home .sise-nav-button:hover{
+#sise-dipdiev-home .sise-nav-button:hover{
   color:#FFFFFF;
   border-color:var(--pink);
   background:var(--pink);
@@ -297,14 +312,14 @@
   box-shadow:0 12px 24px rgba(255,0,80,.18);
 }
 
-#sise-diseno-inverso-home .sise-nav-button.active{
+#sise-dipdiev-home .sise-nav-button.active{
   color:#FFFFFF;
   border-color:var(--pink);
   background:linear-gradient(135deg,#FF0050,#E50048);
   box-shadow:0 10px 24px rgba(255,0,80,.25);
 }
 
-#sise-diseno-inverso-home .sise-nav-icon{
+#sise-dipdiev-home .sise-nav-icon{
   display:inline-flex;
   align-items:center;
   justify-content:center;
@@ -317,20 +332,20 @@
   font-weight:900;
 }
 
+
 /* =========================================================
    CAJA DINÁMICA
-   ========================================================= */
+========================================================= */
 
-#sise-diseno-inverso-home .sise-dynamic-box{
+#sise-dipdiev-home .sise-dynamic-box{
   overflow:hidden;
-  min-height:530px;
   border:1px solid var(--border);
   border-radius:18px;
   background:#FFFFFF;
   box-shadow:0 16px 38px rgba(35,31,32,.09);
 }
 
-#sise-diseno-inverso-home .sise-dynamic-header{
+#sise-dipdiev-home .sise-dynamic-header{
   position:relative;
   overflow:hidden;
   padding:33px 34px 30px;
@@ -340,7 +355,7 @@
     linear-gradient(130deg,#211D1F 0%,#421123 100%);
 }
 
-#sise-diseno-inverso-home .sise-dynamic-header:after{
+#sise-dipdiev-home .sise-dynamic-header:after{
   content:"";
   position:absolute;
   width:165px;
@@ -351,7 +366,7 @@
   border-radius:50%;
 }
 
-#sise-diseno-inverso-home .sise-dynamic-kicker{
+#sise-dipdiev-home .sise-dynamic-kicker{
   position:relative;
   z-index:1;
   display:block;
@@ -363,7 +378,7 @@
   text-transform:uppercase;
 }
 
-#sise-diseno-inverso-home .sise-dynamic-title{
+#sise-dipdiev-home .sise-dynamic-title{
   position:relative;
   z-index:1;
   margin:0;
@@ -373,7 +388,7 @@
   font-weight:800;
 }
 
-#sise-diseno-inverso-home .sise-dynamic-body{
+#sise-dipdiev-home .sise-dynamic-body{
   padding:34px;
   animation:siseFadeIn .35s ease;
 }
@@ -389,18 +404,19 @@
   }
 }
 
-#sise-diseno-inverso-home .sise-dynamic-body p{
+#sise-dipdiev-home .sise-dynamic-body > p{
   margin:0 0 22px;
   color:#5B5457;
   font-size:17px;
   line-height:1.65;
 }
 
+
 /* =========================================================
    SOBRE EL CURSO
-   ========================================================= */
+========================================================= */
 
-#sise-diseno-inverso-home .sise-section-title{
+#sise-dipdiev-home .sise-section-title{
   display:flex;
   align-items:center;
   gap:12px;
@@ -410,11 +426,11 @@
   line-height:1.25;
 }
 
-#sise-diseno-inverso-home .sise-section-title:first-child{
+#sise-dipdiev-home .sise-section-title:first-child{
   margin-top:0;
 }
 
-#sise-diseno-inverso-home .sise-title-number{
+#sise-dipdiev-home .sise-title-number{
   display:inline-flex;
   flex:0 0 auto;
   align-items:center;
@@ -428,19 +444,20 @@
   box-shadow:0 0 0 6px rgba(255,0,80,.08);
 }
 
-#sise-diseno-inverso-home .sise-audience-card{
+#sise-dipdiev-home .sise-audience-card{
   padding:20px 22px;
   border:1px solid #F1DCE4;
   border-radius:13px;
   background:var(--pink-soft);
 }
 
-#sise-diseno-inverso-home .sise-audience-card p{
+#sise-dipdiev-home .sise-audience-card p{
   margin:0;
   color:#3C3336;
+  font-size:16px;
 }
 
-#sise-diseno-inverso-home .sise-goal-card{
+#sise-dipdiev-home .sise-goal-card{
   position:relative;
   overflow:hidden;
   padding:24px 25px;
@@ -449,7 +466,7 @@
   background:#FAF8F9;
 }
 
-#sise-diseno-inverso-home .sise-goal-card:before{
+#sise-dipdiev-home .sise-goal-card:before{
   content:"";
   position:absolute;
   left:0;
@@ -459,45 +476,46 @@
   background:linear-gradient(#FF0050,#8D1E45);
 }
 
-#sise-diseno-inverso-home .sise-goal-card p{
+#sise-dipdiev-home .sise-goal-card p{
   margin:0;
   color:#40383B;
 }
 
-#sise-diseno-inverso-home .sise-competence{
+#sise-dipdiev-home .sise-competence{
   padding:25px;
   border-radius:15px;
   color:#FFFFFF;
   background:linear-gradient(135deg,#231F20,#3B1725);
 }
 
-#sise-diseno-inverso-home .sise-competence strong{
+#sise-dipdiev-home .sise-competence strong{
   display:block;
   margin-bottom:10px;
   color:#FF5D8E;
   font-size:20px;
 }
 
-#sise-diseno-inverso-home .sise-competence p{
+#sise-dipdiev-home .sise-competence p{
   margin:0;
   color:rgba(255,255,255,.82);
 }
 
+
 /* =========================================================
    MÓDULOS
-   ========================================================= */
+========================================================= */
 
-#sise-diseno-inverso-home .sise-modules-grid{
+#sise-dipdiev-home .sise-modules-grid{
   display:grid;
   grid-template-columns:repeat(2,1fr);
   gap:18px;
 }
 
-#sise-diseno-inverso-home .sise-module-card{
+#sise-dipdiev-home .sise-module-card{
   position:relative;
   overflow:hidden;
-  min-height:390px;
-  padding:29px;
+  min-height:245px;
+  padding:27px;
   border:1px solid rgba(255,255,255,.1);
   border-radius:17px;
   color:#FFFFFF;
@@ -505,9 +523,11 @@
     radial-gradient(circle at 100% 0,rgba(255,0,80,.2),transparent 40%),
     linear-gradient(145deg,#1D1A1C 0%,#2B2528 100%);
   box-shadow:0 14px 28px rgba(35,31,32,.14);
+  display:flex;
+  flex-direction:column;
 }
 
-#sise-diseno-inverso-home .sise-module-card:after{
+#sise-dipdiev-home .sise-module-card:after{
   content:"";
   position:absolute;
   width:150px;
@@ -518,29 +538,31 @@
   border-radius:50%;
 }
 
-#sise-diseno-inverso-home .sise-module-top{
+#sise-dipdiev-home .sise-module-top{
   display:flex;
   align-items:center;
-  gap:16px;
-  margin-bottom:24px;
+  gap:15px;
+  margin-bottom:20px;
+  position:relative;
+  z-index:2;
 }
 
-#sise-diseno-inverso-home .sise-module-number{
+#sise-dipdiev-home .sise-module-number{
   display:flex;
-  flex:0 0 auto;
   align-items:center;
   justify-content:center;
-  width:58px;
-  height:58px;
+  width:50px;
+  height:50px;
+  flex:0 0 50px;
   border-radius:50%;
   color:#FFFFFF;
   background:linear-gradient(135deg,#FF0050,#FF477C);
-  font-size:23px;
+  font-size:20px;
   font-weight:900;
-  box-shadow:0 0 0 7px rgba(255,0,80,.11);
+  box-shadow:0 0 0 6px rgba(255,0,80,.11);
 }
 
-#sise-diseno-inverso-home .sise-module-label{
+#sise-dipdiev-home .sise-module-label{
   color:#FF6D9B;
   font-size:12px;
   font-weight:800;
@@ -548,86 +570,144 @@
   text-transform:uppercase;
 }
 
-#sise-diseno-inverso-home .sise-module-card h3{
-  min-height:64px;
-  margin:0 0 14px;
-  color:#FFFFFF;
-  font-size:24px;
-  line-height:1.3;
-}
-
-#sise-diseno-inverso-home .sise-module-card p{
-  margin:0 0 18px;
-  color:rgba(255,255,255,.78);
-  font-size:16px;
-  line-height:1.55;
-}
-
-#sise-diseno-inverso-home .sise-module-topics{
+#sise-dipdiev-home .sise-module-card h3{
   position:relative;
   z-index:2;
-  margin:0 0 24px;
-  padding:16px 17px;
-  border:1px solid rgba(255,255,255,.10);
-  border-radius:12px;
-  background:rgba(255,255,255,.05);
+  margin:0 0 12px;
+  color:#FFFFFF;
+  font-size:25px;
+  line-height:1.25;
 }
 
-#sise-diseno-inverso-home .sise-module-topics strong{
-  display:block;
-  margin-bottom:9px;
-  color:#FF8AAF;
+#sise-dipdiev-home .sise-module-help{
+  position:relative;
+  z-index:2;
+  margin:0 0 20px;
+  color:rgba(255,255,255,.68);
   font-size:13px;
-  letter-spacing:.8px;
-  text-transform:uppercase;
+  line-height:1.5;
 }
 
-#sise-diseno-inverso-home .sise-module-topics ul{
-  margin:0;
-  padding-left:20px;
-}
-
-#sise-diseno-inverso-home .sise-module-topics li{
-  margin:6px 0;
-  color:rgba(255,255,255,.82);
-  font-size:15px;
-  line-height:1.4;
-}
-
-#sise-diseno-inverso-home .sise-module-btn{
+#sise-dipdiev-home .sise-module-btn{
   position:relative;
   z-index:2;
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  padding:13px 20px;
+  align-self:flex-start;
+  margin-top:auto;
+  padding:12px 19px;
   border-radius:9px;
   color:#FFFFFF;
   background:var(--pink);
   text-decoration:none;
-  font-size:15px;
+  font-size:14px;
   font-weight:700;
 }
 
-#sise-diseno-inverso-home .sise-module-btn:hover{
+#sise-dipdiev-home .sise-module-btn:hover{
   color:#FFFFFF;
   background:#D90044;
   transform:translateY(-2px);
 }
 
+
+/* =========================================================
+   SÍLABO
+========================================================= */
+
+#sise-dipdiev-home .sise-syllabus-card{
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  margin-top:18px;
+  padding:22px 24px;
+  border:1px solid #F1D5DE;
+  border-left:6px solid var(--pink);
+  border-radius:14px;
+  background:linear-gradient(105deg,#FFF1F5 0%,#FFFFFF 70%);
+}
+
+#sise-dipdiev-home .sise-syllabus-card:after{
+  content:"";
+  position:absolute;
+  width:120px;
+  height:120px;
+  right:-48px;
+  top:-62px;
+  border:1px solid rgba(255,0,80,.14);
+  border-radius:50%;
+}
+
+#sise-dipdiev-home .sise-syllabus-info{
+  position:relative;
+  z-index:2;
+}
+
+#sise-dipdiev-home .sise-syllabus-label{
+  display:block;
+  margin-bottom:4px;
+  color:var(--pink);
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:1.2px;
+  text-transform:uppercase;
+}
+
+#sise-dipdiev-home .sise-syllabus-card h3{
+  margin:0 0 5px;
+  color:#231F20;
+  font-size:21px;
+}
+
+#sise-dipdiev-home .sise-syllabus-card p{
+  margin:0;
+  color:#655C60;
+  font-size:13px;
+  line-height:1.5;
+}
+
+#sise-dipdiev-home .sise-syllabus-btn{
+  position:relative;
+  z-index:2;
+  display:inline-flex;
+  flex:0 0 auto;
+  align-items:center;
+  justify-content:center;
+  min-width:145px;
+  padding:12px 18px;
+  border-radius:9px;
+  color:#FFFFFF;
+  background:var(--dark-2);
+  text-decoration:none;
+  font-size:14px;
+  font-weight:800;
+}
+
+#sise-dipdiev-home .sise-syllabus-btn:hover{
+  color:#FFFFFF;
+  background:var(--pink);
+  transform:translateY(-2px);
+}
+
+
 /* =========================================================
    EVALUACIÓN
-   ========================================================= */
+========================================================= */
 
-#sise-diseno-inverso-home .sise-evaluation-grid{
+#sise-dipdiev-home .sise-evaluation-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:14px;
+  align-items:stretch;
 }
 
-#sise-diseno-inverso-home .sise-evaluation-card{
-  min-height:260px;
-  padding:26px 23px;
+#sise-dipdiev-home .sise-evaluation-card{
+  min-height:290px;
+  padding:24px 21px;
   border:1px solid #E9E1E4;
   border-top:5px solid var(--pink);
   border-radius:16px;
@@ -635,35 +715,116 @@
   box-shadow:0 10px 25px rgba(35,31,32,.07);
 }
 
-#sise-diseno-inverso-home .sise-evaluation-icon{
+#sise-dipdiev-home .sise-evaluation-icon{
   display:flex;
   align-items:center;
   justify-content:center;
-  width:50px;
-  height:50px;
-  margin-bottom:20px;
+  width:48px;
+  height:48px;
+  margin-bottom:17px;
   border-radius:50%;
   color:#FFFFFF;
   background:linear-gradient(135deg,#FF0050,#FF467B);
-  font-size:18px;
+  font-size:17px;
   font-weight:900;
 }
 
-#sise-diseno-inverso-home .sise-evaluation-card h3{
-  margin:0 0 12px;
+#sise-dipdiev-home .sise-evaluation-card h3{
+  margin:0 0 10px;
   color:#231F20;
   font-size:20px;
   line-height:1.25;
 }
 
-#sise-diseno-inverso-home .sise-evaluation-card p{
+#sise-dipdiev-home .sise-evaluation-card p{
   margin:0;
   color:#665E61;
-  font-size:15px;
-  line-height:1.55;
+  font-size:14px;
+  line-height:1.5;
 }
 
-#sise-diseno-inverso-home .sise-pass-card{
+
+/* =========================================================
+   COEVALUACIÓN
+========================================================= */
+
+#sise-dipdiev-home .sise-coeval-card{
+  display:flex;
+  flex-direction:column;
+}
+
+#sise-dipdiev-home .sise-coeval-intro{
+  margin-bottom:13px !important;
+}
+
+#sise-dipdiev-home .sise-coeval-flow{
+  display:flex;
+  align-items:stretch;
+  gap:5px;
+  margin:5px 0 16px;
+}
+
+#sise-dipdiev-home .sise-coeval-step{
+  flex:1;
+  min-width:0;
+  padding:9px 5px;
+  border:1px solid #F1D5DE;
+  border-radius:8px;
+  background:#FFF4F7;
+  text-align:center;
+}
+
+#sise-dipdiev-home .sise-coeval-step strong{
+  display:block;
+  margin-bottom:3px;
+  color:var(--pink);
+  font-size:11px;
+  font-weight:900;
+}
+
+#sise-dipdiev-home .sise-coeval-step span{
+  display:block;
+  color:#4D4548;
+  font-size:10px;
+  line-height:1.2;
+  font-weight:700;
+}
+
+#sise-dipdiev-home .sise-coeval-arrow{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 12px;
+  color:var(--pink);
+  font-size:18px;
+  font-weight:900;
+}
+
+#sise-dipdiev-home .sise-coeval-manual-btn{
+  width:100%;
+  margin-top:auto;
+  padding:11px 13px;
+  border:0;
+  border-radius:8px;
+  color:#FFFFFF;
+  background:var(--dark-2);
+  cursor:pointer;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:13px;
+  font-weight:800;
+}
+
+#sise-dipdiev-home .sise-coeval-manual-btn:hover{
+  background:var(--pink);
+  transform:translateY(-1px);
+}
+
+
+/* =========================================================
+   APROBACIÓN
+========================================================= */
+
+#sise-dipdiev-home .sise-pass-card{
   display:flex;
   align-items:center;
   gap:20px;
@@ -676,7 +837,7 @@
     linear-gradient(125deg,#211D1F,#441124);
 }
 
-#sise-diseno-inverso-home .sise-pass-number{
+#sise-dipdiev-home .sise-pass-number{
   display:flex;
   flex:0 0 auto;
   align-items:center;
@@ -691,278 +852,532 @@
   box-shadow:0 0 0 8px rgba(255,0,80,.13);
 }
 
-#sise-diseno-inverso-home .sise-pass-card p{
+#sise-dipdiev-home .sise-pass-card p{
   margin:0;
   color:rgba(255,255,255,.86);
 }
 
-#sise-diseno-inverso-home .sise-pass-card strong{
+#sise-dipdiev-home .sise-pass-card strong{
   color:#FFFFFF;
 }
+
 
 /* =========================================================
-   DESCARGABLES
-   ========================================================= */
+   MODAL COEVALUACIÓN
+========================================================= */
 
-#sise-diseno-inverso-home .sise-download-content{
+#sise-dipdiev-home .sise-coeval-modal{
+  position:fixed;
+  inset:0;
+  z-index:99999;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:22px;
+  background:rgba(17,14,16,.78);
+}
+
+#sise-dipdiev-home .sise-coeval-modal.is-open{
+  display:flex;
+}
+
+#sise-dipdiev-home .sise-coeval-modal-panel{
+  width:100%;
+  max-width:720px;
+  max-height:90vh;
+  overflow-y:auto;
+  border-radius:17px;
+  background:#FFFFFF;
+  box-shadow:0 25px 70px rgba(0,0,0,.28);
+}
+
+#sise-dipdiev-home .sise-coeval-modal-head{
   position:relative;
   overflow:hidden;
-  min-height:330px;
-  padding:50px 30px;
-  border-radius:16px;
-  text-align:center;
+  padding:27px 30px;
   color:#FFFFFF;
   background:
-    radial-gradient(circle at 15% 90%,rgba(255,0,80,.18),transparent 34%),
-    radial-gradient(circle at 90% 10%,rgba(255,0,80,.24),transparent 33%),
-    linear-gradient(135deg,#171416 0%,#33101E 100%);
+    radial-gradient(circle at 95% 0,rgba(255,0,80,.3),transparent 40%),
+    linear-gradient(130deg,#211D1F,#481326);
 }
 
-#sise-diseno-inverso-home .sise-download-content:before{
-  content:"";
+#sise-dipdiev-home .sise-coeval-modal-head small{
+  display:block;
+  margin-bottom:6px;
+  color:#FF9AB9;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:1.2px;
+  text-transform:uppercase;
+}
+
+#sise-dipdiev-home .sise-coeval-modal-head h3{
+  margin:0;
+  padding-right:48px;
+  color:#FFFFFF;
+  font-size:28px;
+}
+
+#sise-dipdiev-home .sise-coeval-close{
   position:absolute;
-  width:230px;
-  height:230px;
-  right:-70px;
-  top:-100px;
-  border:1px solid rgba(255,255,255,.1);
-  border-radius:50%;
-}
-
-#sise-diseno-inverso-home .sise-download-icon{
-  position:relative;
+  top:16px;
+  right:18px;
   display:flex;
   align-items:center;
   justify-content:center;
-  width:72px;
-  height:72px;
-  margin:0 auto 22px;
+  width:36px;
+  height:36px;
+  border:1px solid rgba(255,255,255,.25);
+  border-radius:50%;
+  color:#FFFFFF;
+  background:rgba(255,255,255,.07);
+  cursor:pointer;
+  font-size:20px;
+  font-weight:900;
+}
+
+#sise-dipdiev-home .sise-coeval-close:hover{
+  background:var(--pink);
+  border-color:var(--pink);
+}
+
+#sise-dipdiev-home .sise-coeval-modal-body{
+  padding:28px 30px 30px;
+}
+
+#sise-dipdiev-home .sise-coeval-modal-intro{
+  margin:0 0 21px;
+  color:#5E5659;
+  font-size:15px;
+  line-height:1.6;
+}
+
+#sise-dipdiev-home .sise-manual-route{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:10px;
+}
+
+#sise-dipdiev-home .sise-manual-step{
+  display:grid;
+  grid-template-columns:42px 1fr;
+  gap:13px;
+  align-items:start;
+  padding:15px;
+  border:1px solid #EAE2E5;
+  border-radius:10px;
+  background:#FFFFFF;
+}
+
+#sise-dipdiev-home .sise-manual-step-num{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:38px;
+  height:38px;
   border-radius:50%;
   color:#FFFFFF;
   background:var(--pink);
-  font-size:30px;
-  font-weight:900;
-  box-shadow:0 0 0 9px rgba(255,0,80,.12);
-}
-
-#sise-diseno-inverso-home .sise-download-content h3{
-  position:relative;
-  margin:0 0 12px;
-  color:#FFFFFF;
-  font-size:30px;
-}
-
-#sise-diseno-inverso-home .sise-download-content p{
-  position:relative;
-  max-width:760px;
-  margin:0 auto 22px;
-  color:rgba(255,255,255,.72);
-  font-size:17px;
-}
-
-#sise-diseno-inverso-home .sise-resource-tags{
-  position:relative;
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:8px;
-  max-width:820px;
-  margin:0 auto 28px;
-}
-
-#sise-diseno-inverso-home .sise-resource-tag{
-  padding:8px 12px;
-  border:1px solid rgba(255,255,255,.16);
-  border-radius:999px;
-  color:#FFFFFF;
-  background:rgba(255,255,255,.07);
   font-size:13px;
-  font-weight:700;
+  font-weight:900;
 }
 
-#sise-diseno-inverso-home .sise-download-actions{
+#sise-dipdiev-home .sise-manual-step h4{
+  margin:1px 0 4px;
+  color:#231F20;
+  font-size:16px;
+}
+
+#sise-dipdiev-home .sise-manual-step p{
+  margin:0;
+  color:#655D60;
+  font-size:13px;
+  line-height:1.5;
+}
+
+#sise-dipdiev-home .sise-manual-note{
+  margin-top:17px;
+  padding:15px 17px;
+  border-left:5px solid var(--pink);
+  border-radius:8px;
+  color:#433A3D;
+  background:#FFF1F5;
+  font-size:13px;
+  line-height:1.55;
+}
+
+#sise-dipdiev-home .sise-template{
+  display:none !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE CANVAS / TABLET
+   SE MANTIENE EN UNA SOLA FILA
+========================================================= */
+
+@media screen and (max-width:900px){
+
+  #sise-dipdiev-home .sise-stats-wrap{
+    width:calc(100% - 20px);
+    max-width:100%;
+    margin-top:-34px;
+  }
+
+  #sise-dipdiev-home .sise-stats{
+    display:table;
+    table-layout:fixed;
+  }
+
+  #sise-dipdiev-home .sise-stats tbody{
+    display:table-row-group;
+  }
+
+  #sise-dipdiev-home .sise-stats tr{
+    display:table-row;
+  }
+
+  #sise-dipdiev-home .sise-stats td{
+    display:table-cell;
+    width:20%;
+    padding:10px 4px;
+    border-right:1px solid rgba(255,255,255,.10);
+    border-bottom:none;
+  }
+
+  #sise-dipdiev-home .sise-stats td:last-child{
+    border-right:none;
+  }
+
+  #sise-dipdiev-home .sise-stat-icon{
+    width:30px;
+    height:30px;
+    margin-bottom:6px;
+  }
+
+  #sise-dipdiev-home .sise-stat-icon svg{
+    width:15px;
+    height:15px;
+  }
+
+  #sise-dipdiev-home .sise-stat-value{
+    font-size:14px;
+  }
+
+  #sise-dipdiev-home .sise-stat-label{
+    max-width:110px;
+    font-size:9.5px;
+  }
+
+  #sise-dipdiev-home .sise-modules-grid{
+    grid-template-columns:1fr;
+  }
+
+  #sise-dipdiev-home .sise-evaluation-grid{
+    grid-template-columns:1fr;
+  }
+
+  #sise-dipdiev-home .sise-evaluation-card{
+    min-height:auto;
+  }
+}
+
+
+/* =========================================================
+   MÓVIL
+========================================================= */
+
+@media screen and (max-width:540px){
+
+  #sise-dipdiev-home .sise-container{
+    padding-left:16px;
+    padding-right:16px;
+  }
+
+  #sise-dipdiev-home .sise-hero{
+    padding:48px 0 82px;
+  }
+
+  #sise-dipdiev-home .sise-hero h1{
+    font-size:39px;
+    letter-spacing:-1px;
+  }
+
+  #sise-dipdiev-home .sise-hero-description{
+    font-size:17px;
+  }
+
+  #sise-dipdiev-home .sise-btn-primary{
+    width:100%;
+  }
+
+  #sise-dipdiev-home .sise-stats-wrap{
+    width:calc(100% - 24px);
+    margin-top:-30px;
+    margin-bottom:28px;
+  }
+
+  #sise-dipdiev-home .sise-stats,
+  #sise-dipdiev-home .sise-stats tbody,
+  #sise-dipdiev-home .sise-stats tr{
+    display:block;
+  }
+
+  #sise-dipdiev-home .sise-stats tr{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  #sise-dipdiev-home .sise-stats td{
+    display:block;
+    width:100%;
+    padding:12px 8px;
+    border-right:1px solid rgba(255,255,255,.10);
+    border-bottom:1px solid rgba(255,255,255,.10);
+  }
+
+  #sise-dipdiev-home .sise-stats td:nth-child(2n){
+    border-right:none;
+  }
+
+  #sise-dipdiev-home .sise-stats td:last-child{
+    grid-column:1/-1;
+    border-right:none;
+    border-bottom:none;
+  }
+
+  #sise-dipdiev-home .sise-stat-value{
+    font-size:15px;
+  }
+
+  #sise-dipdiev-home .sise-stat-label{
+    font-size:10px;
+  }
+
+  #sise-dipdiev-home .sise-navigation{
+    grid-template-columns:1fr;
+  }
+
+  #sise-dipdiev-home .sise-nav-button{
+    justify-content:flex-start;
+  }
+
+  #sise-dipdiev-home .sise-dynamic-header{
+    padding:25px 21px;
+  }
+
+  #sise-dipdiev-home .sise-dynamic-title{
+    font-size:27px;
+  }
+
+  #sise-dipdiev-home .sise-dynamic-body{
+    padding:25px 21px;
+  }
+
+  #sise-dipdiev-home .sise-module-card{
+    min-height:215px;
+    padding:24px;
+  }
+
+  #sise-dipdiev-home .sise-syllabus-card{
+    display:block;
+    padding:20px;
+  }
+
+  #sise-dipdiev-home .sise-syllabus-btn{
+    width:100%;
+    margin-top:16px;
+  }
+
+  #sise-dipdiev-home .sise-pass-card{
+    display:block;
+    text-align:center;
+  }
+
+  #sise-dipdiev-home .sise-pass-number{
+    margin:0 auto 20px;
+  }
+
+  #sise-dipdiev-home .sise-coeval-flow{
+    display:grid;
+    grid-template-columns:1fr;
+  }
+
+  #sise-dipdiev-home .sise-coeval-arrow{
+    transform:rotate(90deg);
+    min-height:12px;
+  }
+
+  #sise-dipdiev-home .sise-coeval-modal{
+    padding:12px;
+  }
+
+  #sise-dipdiev-home .sise-coeval-modal-head,
+  #sise-dipdiev-home .sise-coeval-modal-body{
+    padding-left:20px;
+    padding-right:20px;
+  }
+}
+
+
+
+/* =========================================================
+   AJUSTES ESPECIFICOS · DIPDIEV
+========================================================= */
+#sise-dipdiev-home .sise-navigation{
+  grid-template-columns:repeat(4,1fr);
+}
+
+#sise-dipdiev-home .sise-module-card{
+  min-height:430px;
+}
+
+#sise-dipdiev-home .sise-module-description{
   position:relative;
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:12px;
+  z-index:2;
+  margin:0 0 16px;
+  color:rgba(255,255,255,.82);
+  font-size:14px;
+  line-height:1.55;
 }
 
-#sise-diseno-inverso-home .sise-download-btn{
+#sise-dipdiev-home .sise-module-topics{
+  position:relative;
+  z-index:2;
+  margin:0 0 22px;
+  padding:16px 17px;
+  border:1px solid rgba(255,255,255,.09);
+  border-radius:12px;
+  background:rgba(255,255,255,.045);
+}
+
+#sise-dipdiev-home .sise-module-topics strong{
+  display:block;
+  margin-bottom:8px;
+  color:#FF7CA5;
+  font-size:12px;
+  letter-spacing:.7px;
+  text-transform:uppercase;
+}
+
+#sise-dipdiev-home .sise-module-topics ul{
+  margin:0;
+  padding-left:18px;
+  color:rgba(255,255,255,.72);
+  font-size:12.5px;
+  line-height:1.5;
+}
+
+#sise-dipdiev-home .sise-module-topics li{
+  margin:5px 0;
+}
+
+#sise-dipdiev-home .sise-evaluation-card{
+  min-height:265px;
+}
+
+#sise-dipdiev-home .sise-download-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+  margin:4px 0 20px;
+}
+
+#sise-dipdiev-home .sise-download-card{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:18px 19px;
+  border:1px solid #E9E1E4;
+  border-radius:13px;
+  background:#FFFFFF;
+  box-shadow:0 8px 20px rgba(35,31,32,.05);
+}
+
+#sise-dipdiev-home .sise-download-icon{
+  display:flex;
+  flex:0 0 38px;
+  align-items:center;
+  justify-content:center;
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  color:#FFFFFF;
+  background:linear-gradient(135deg,#FF0050,#FF467B);
+  font-size:16px;
+  font-weight:900;
+}
+
+#sise-dipdiev-home .sise-download-card strong{
+  color:#231F20;
+  font-size:14px;
+  line-height:1.35;
+}
+
+#sise-dipdiev-home .sise-download-actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+#sise-dipdiev-home .sise-download-actions .sise-btn-primary{
+  min-height:46px;
+  padding:12px 19px;
+  font-size:14px;
+}
+
+#sise-dipdiev-home .sise-btn-secondary{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  min-width:190px;
-  padding:14px 22px;
+  min-height:46px;
+  padding:12px 19px;
   border-radius:9px;
-  color:#231F20;
-  background:#FFFFFF;
+  color:#FFFFFF;
+  background:var(--dark-2);
   text-decoration:none;
-  font-size:15px;
-  font-weight:700;
+  font-size:14px;
+  font-weight:800;
 }
 
-#sise-diseno-inverso-home .sise-download-btn:hover{
+#sise-dipdiev-home .sise-btn-secondary:hover{
   color:#FFFFFF;
   background:var(--pink);
   transform:translateY(-2px);
 }
 
-#sise-diseno-inverso-home .sise-download-btn-alt{
-  color:#FFFFFF;
-  border:1px solid rgba(255,255,255,.25);
-  background:rgba(255,255,255,.08);
-}
-
-#sise-diseno-inverso-home .sise-download-btn-alt:hover{
-  color:#FFFFFF;
-  border-color:var(--pink);
-  background:var(--pink);
-}
-
-#sise-diseno-inverso-home .sise-template{
-  display:none !important;
-}
-
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
-
 @media screen and (max-width:900px){
-
-  #sise-diseno-inverso-home .sise-stats,
-  #sise-diseno-inverso-home .sise-stats tbody,
-  #sise-diseno-inverso-home .sise-stats tr{
-    display:block;
+  #sise-dipdiev-home .sise-navigation{
+    grid-template-columns:repeat(2,1fr);
   }
+  #sise-dipdiev-home .sise-module-card{
+    min-height:auto;
+  }
+}
 
-  #sise-diseno-inverso-home .sise-stats tr{
+@media screen and (max-width:540px){
+  #sise-dipdiev-home .sise-navigation,
+  #sise-dipdiev-home .sise-download-grid{
+    grid-template-columns:1fr;
+  }
+  #sise-dipdiev-home .sise-download-actions{
     display:grid;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:1fr;
   }
-
-  #sise-diseno-inverso-home .sise-stats td{
-    display:block;
+  #sise-dipdiev-home .sise-download-actions a{
     width:100%;
-    border-right:1px solid rgba(255,255,255,.1);
-    border-bottom:1px solid rgba(255,255,255,.1);
-  }
-
-  #sise-diseno-inverso-home .sise-stats td:last-child{
-    grid-column:1 / -1;
-  }
-
-  #sise-diseno-inverso-home .sise-navigation{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  #sise-diseno-inverso-home .sise-modules-grid{
-    grid-template-columns:1fr;
-  }
-
-  #sise-diseno-inverso-home .sise-module-card h3{
-    min-height:auto;
-  }
-
-  #sise-diseno-inverso-home .sise-evaluation-grid{
-    grid-template-columns:1fr;
-  }
-
-  #sise-diseno-inverso-home .sise-evaluation-card{
-    min-height:auto;
   }
 }
 
-@media screen and (max-width:600px){
-
-  #sise-diseno-inverso-home .sise-container{
-    padding-left:16px;
-    padding-right:16px;
-  }
-
-  #sise-diseno-inverso-home .sise-hero{
-    padding:48px 0 82px;
-  }
-
-  #sise-diseno-inverso-home .sise-hero h1{
-    font-size:37px;
-    letter-spacing:-1px;
-  }
-
-  #sise-diseno-inverso-home .sise-hero-description{
-    font-size:17px;
-  }
-
-  #sise-diseno-inverso-home .sise-btn-primary{
-    width:100%;
-  }
-
-  #sise-diseno-inverso-home .sise-stats-wrap{
-    margin-top:-44px;
-    padding:0 16px;
-  }
-
-  #sise-diseno-inverso-home .sise-stats tr{
-    grid-template-columns:1fr;
-  }
-
-  #sise-diseno-inverso-home .sise-stats td:last-child{
-    grid-column:auto;
-  }
-
-  #sise-diseno-inverso-home .sise-navigation{
-    grid-template-columns:1fr;
-  }
-
-  #sise-diseno-inverso-home .sise-nav-button{
-    justify-content:flex-start;
-  }
-
-  #sise-diseno-inverso-home .sise-dynamic-header{
-    padding:25px 21px;
-  }
-
-  #sise-diseno-inverso-home .sise-dynamic-title{
-    font-size:27px;
-  }
-
-  #sise-diseno-inverso-home .sise-dynamic-body{
-    padding:25px 21px;
-  }
-
-  #sise-diseno-inverso-home .sise-module-card{
-    min-height:auto;
-    padding:24px 21px;
-  }
-
-  #sise-diseno-inverso-home .sise-pass-card{
-    display:block;
-    text-align:center;
-  }
-
-  #sise-diseno-inverso-home .sise-pass-number{
-    margin:0 auto 20px;
-  }
-
-  #sise-diseno-inverso-home .sise-download-content{
-    padding:42px 20px;
-  }
-}
 </style>
 
-
-<!-- ======================================================
+<!-- =========================================================
      PORTADA
-     ====================================================== -->
-
+========================================================= -->
 <div class="sise-hero">
-
   <div class="sise-dot-pattern"></div>
-
   <div class="sise-container">
-
     <div class="sise-hero-content">
-
       <div class="sise-eyebrow">
         <span class="sise-eyebrow-dot"></span>
         Programa de Capacitación Docente · PAC 2026
@@ -975,40 +1390,32 @@
       </h1>
 
       <p class="sise-hero-description">
-        Convierte tu sílabo en una herramienta de planificación pedagógica:
-        aprende a traducir competencias y resultados de aprendizaje en
-        desempeños observables, evidencias coherentes y experiencias
-        diseñadas desde el resultado esperado.
+        Convierte tu sílabo en una herramienta de planificación pedagógica: aprende a traducir competencias y resultados de aprendizaje en desempeños observables, evidencias coherentes y experiencias diseñadas desde el resultado esperado.
       </p>
 
-      <a
-        class="sise-btn-primary"
-        href="https://aulad.educad.pe/courses/672/modules"
-        target="_top"
-        rel="noopener">
+      <a class="sise-btn-primary" href="https://aulad.educad.pe/courses/672/modules">
         Iniciar recorrido&nbsp; →
       </a>
-
     </div>
-
   </div>
-
 </div>
 
-
-<!-- ======================================================
+<!-- =========================================================
      DATOS DEL CURSO
-     ====================================================== -->
-
+========================================================= -->
 <div class="sise-stats-wrap">
-
   <table class="sise-stats">
     <tbody>
       <tr>
-
         <td>
-          <div class="sise-stat-icon">02</div>
-          <div class="sise-stat-value">Módulos</div>
+          <div class="sise-stat-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <polygon points="12 2 22 7 12 12 2 7 12 2"></polygon>
+              <polyline points="2 12 12 17 22 12"></polyline>
+              <polyline points="2 17 12 22 22 17"></polyline>
+            </svg>
+          </div>
+          <div class="sise-stat-value">2 módulos</div>
           <p class="sise-stat-label">Ruta de aprendizaje aplicada</p>
         </td>
 
@@ -1019,13 +1426,25 @@
         </td>
 
         <td>
-          <div class="sise-stat-icon">3h</div>
+          <div class="sise-stat-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M12 7v5l3.5 2"></path>
+            </svg>
+          </div>
           <div class="sise-stat-value">3 horas</div>
           <p class="sise-stat-label">Tiempo estimado</p>
         </td>
 
         <td>
-          <div class="sise-stat-icon">2m</div>
+          <div class="sise-stat-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="16" rx="2"></rect>
+              <path d="M8 3v4"></path>
+              <path d="M16 3v4"></path>
+              <path d="M3 10h18"></path>
+            </svg>
+          </div>
           <div class="sise-stat-value">2 meses</div>
           <p class="sise-stat-label">Vigencia del curso</p>
         </td>
@@ -1035,593 +1454,269 @@
           <div class="sise-stat-value">Certificación</div>
           <p class="sise-stat-label">Nota mínima aprobatoria: 17</p>
         </td>
-
       </tr>
     </tbody>
   </table>
-
 </div>
 
-
-<!-- ======================================================
-     NAVEGACIÓN Y CAJA DINÁMICA
-     ====================================================== -->
-
+<!-- =========================================================
+     NAVEGACIÓN
+========================================================= -->
 <div class="sise-container" id="sise-contenido-dinamico">
-
   <div class="sise-intro">
     <p>
-      <strong>Instrucción:</strong>
-      selecciona uno de los botones para consultar la información del curso.
-      El contenido se mostrará en una única caja dinámica.
+      <strong>Instrucción:</strong> selecciona uno de los botones para consultar la información del curso. El contenido se mostrará en una única caja dinámica.
     </p>
   </div>
 
-  <div
-    class="sise-navigation"
-    role="tablist"
-    aria-label="Secciones del curso">
-
-    <button
-      type="button"
-      class="sise-nav-button active"
-      data-section="sobre-curso"
-      role="tab"
-      aria-selected="true">
-      <span class="sise-nav-icon">i</span>
-      Sobre el curso
+  <div class="sise-navigation" role="tablist" aria-label="Secciones del curso">
+    <button type="button" class="sise-nav-button active" data-section="sobre-curso" role="tab" aria-selected="true">
+      <span class="sise-nav-icon">i</span> Sobre el curso
     </button>
-
-    <button
-      type="button"
-      class="sise-nav-button"
-      data-section="modulos"
-      role="tab"
-      aria-selected="false">
-      <span class="sise-nav-icon">☰</span>
-      Módulos
+    <button type="button" class="sise-nav-button" data-section="modulos" role="tab" aria-selected="false">
+      <span class="sise-nav-icon">☰</span> Módulos
     </button>
-
-    <button
-      type="button"
-      class="sise-nav-button"
-      data-section="evaluacion"
-      role="tab"
-      aria-selected="false">
-      <span class="sise-nav-icon">✓</span>
-      Evaluación
+    <button type="button" class="sise-nav-button" data-section="evaluacion" role="tab" aria-selected="false">
+      <span class="sise-nav-icon">✓</span> Evaluación
     </button>
-
-    <button
-      type="button"
-      class="sise-nav-button"
-      data-section="descargables"
-      role="tab"
-      aria-selected="false">
-      <span class="sise-nav-icon">↓</span>
-      Descargables
+    <button type="button" class="sise-nav-button" data-section="descargables" role="tab" aria-selected="false">
+      <span class="sise-nav-icon">↓</span> Descargables
     </button>
-
   </div>
 
-
-  <!-- ÚNICA CAJA VISIBLE -->
-
-  <section
-    class="sise-dynamic-box"
-    aria-live="polite"
-    aria-atomic="true">
-
+  <!-- CAJA DINÁMICA INICIAL -->
+  <section class="sise-dynamic-box" aria-live="polite" aria-atomic="true">
     <div class="sise-dynamic-header">
-
-      <span
-        class="sise-dynamic-kicker"
-        id="sise-dynamic-kicker">
-        Información general
-      </span>
-
-      <h2
-        class="sise-dynamic-title"
-        id="sise-dynamic-title">
-        Conoce el propósito del curso
-      </h2>
-
+      <span class="sise-dynamic-kicker" id="sise-dynamic-kicker">Información general</span>
+      <h2 class="sise-dynamic-title" id="sise-dynamic-title">Conoce el propósito del curso</h2>
     </div>
 
-    <div
-      class="sise-dynamic-body"
-      id="sise-dynamic-body">
-
-      <h3 class="sise-section-title">
-        <span class="sise-title-number">01</span>
-        Descripción del curso
-      </h3>
-
+    <div class="sise-dynamic-body" id="sise-dynamic-body">
+      <h3 class="sise-section-title"><span class="sise-title-number">01</span>Descripción del curso</h3>
       <p>
-        En este curso analizarás el sílabo desde una perspectiva pedagógica
-        para convertirlo en una herramienta real de planificación. Trabajarás
-        la relación entre competencias, resultados de aprendizaje, desempeños
-        observables y evidencias, aplicando la lógica del diseño inverso para
-        fortalecer la coherencia de un curso propio.
+        En este curso analizarás el sílabo desde una perspectiva pedagógica para convertirlo en una herramienta real de planificación. Trabajarás la relación entre competencias, resultados de aprendizaje, desempeños observables y evidencias, aplicando la lógica del diseño inverso para fortalecer la coherencia de un curso propio.
+      </p>
+      <p>
+        La experiencia se desarrolla mediante <strong>Action Mapping</strong>, aprendizaje basado en escenarios y <strong>microlearning</strong>, priorizando decisiones y acciones aplicadas sobre tu propio sílabo.
       </p>
 
-      <p>
-        La experiencia se desarrolla mediante <strong>Action Mapping</strong>,
-        aprendizaje basado en escenarios y <strong>microlearning</strong>,
-        priorizando decisiones y acciones aplicadas sobre tu propio sílabo.
-      </p>
-
-      <h3 class="sise-section-title">
-        <span class="sise-title-number">02</span>
-        ¿A quiénes está dirigido?
-      </h3>
-
+      <h3 class="sise-section-title"><span class="sise-title-number">02</span>¿A quiénes está dirigido?</h3>
       <div class="sise-audience-card">
-        <p>
-          <strong>Docentes SISE participantes del PAC Docente</strong>,
-          en modalidad online asíncrona, que buscan fortalecer la planificación
-          de sus cursos desde un enfoque por competencias y centrado en el
-          desempeño.
-        </p>
+        <p><strong>Docentes SISE participantes del PAC Docente</strong>, en modalidad online asíncrona, que buscan fortalecer la planificación de sus cursos desde un enfoque por competencias y centrado en el desempeño.</p>
       </div>
 
-      <h3 class="sise-section-title">
-        <span class="sise-title-number">03</span>
-        Logro del curso
-      </h3>
-
+      <h3 class="sise-section-title"><span class="sise-title-number">03</span>Logro del curso</h3>
       <div class="sise-goal-card">
         <p>
-          Diseñarás la alineación pedagógica de un curso propio, traduciendo
-          competencias y resultados de aprendizaje en desempeños observables
-          y evidencias coherentes bajo la lógica del diseño inverso, para
-          planificar experiencias centradas en el desempeño en entornos
-          virtuales.
+          Diseñarás la alineación pedagógica de un curso propio, traduciendo competencias y resultados de aprendizaje en desempeños observables y evidencias coherentes bajo la lógica del diseño inverso, para planificar experiencias centradas en el desempeño en entornos virtuales.
         </p>
       </div>
 
-      <h3 class="sise-section-title">
-        <span class="sise-title-number">04</span>
-        Competencia a desarrollar
-      </h3>
-
+      <h3 class="sise-section-title"><span class="sise-title-number">04</span>Competencia a desarrollar</h3>
       <div class="sise-competence">
-
         <strong>C2 · Competencias Pedagógicas</strong>
-
         <p>
-          El curso fortalece la planificación pedagógica mediante la lectura
-          del sílabo, la articulación de competencias y resultados de
-          aprendizaje, y la construcción de desempeños y evidencias
-          coherentes con el resultado esperado.
+          El curso fortalece la planificación pedagógica mediante la lectura del sílabo, la articulación de competencias y resultados de aprendizaje, y la construcción de desempeños y evidencias coherentes con el resultado esperado.
         </p>
-
       </div>
-
     </div>
-
   </section>
 
-
-  <!-- ====================================================
-       PLANTILLA: SOBRE EL CURSO
-       ==================================================== -->
-
-  <div
-    id="sise-template-sobre-curso"
-    class="sise-template"
-    data-kicker="Información general"
-    data-title="Conoce el propósito del curso">
-
-    <h3 class="sise-section-title">
-      <span class="sise-title-number">01</span>
-      Descripción del curso
-    </h3>
-
+  <!-- SOBRE EL CURSO -->
+  <div id="sise-template-sobre-curso" class="sise-template" data-kicker="Información general" data-title="Conoce el propósito del curso">
+    <h3 class="sise-section-title"><span class="sise-title-number">01</span>Descripción del curso</h3>
     <p>
-      En este curso analizarás el sílabo desde una perspectiva pedagógica
-      para convertirlo en una herramienta real de planificación. Trabajarás
-      la relación entre competencias, resultados de aprendizaje, desempeños
-      observables y evidencias, aplicando la lógica del diseño inverso para
-      fortalecer la coherencia de un curso propio.
+      En este curso analizarás el sílabo desde una perspectiva pedagógica para convertirlo en una herramienta real de planificación. Trabajarás la relación entre competencias, resultados de aprendizaje, desempeños observables y evidencias, aplicando la lógica del diseño inverso para fortalecer la coherencia de un curso propio.
+    </p>
+    <p>
+      La experiencia se desarrolla mediante <strong>Action Mapping</strong>, aprendizaje basado en escenarios y <strong>microlearning</strong>, priorizando decisiones y acciones aplicadas sobre tu propio sílabo.
     </p>
 
-    <p>
-      La experiencia se desarrolla mediante <strong>Action Mapping</strong>,
-      aprendizaje basado en escenarios y <strong>microlearning</strong>,
-      priorizando decisiones y acciones aplicadas sobre tu propio sílabo.
-    </p>
-
-    <h3 class="sise-section-title">
-      <span class="sise-title-number">02</span>
-      ¿A quiénes está dirigido?
-    </h3>
-
+    <h3 class="sise-section-title"><span class="sise-title-number">02</span>¿A quiénes está dirigido?</h3>
     <div class="sise-audience-card">
-      <p>
-        <strong>Docentes SISE participantes del PAC Docente</strong>,
-        en modalidad online asíncrona, que buscan fortalecer la planificación
-        de sus cursos desde un enfoque por competencias y centrado en el
-        desempeño.
-      </p>
+      <p><strong>Docentes SISE participantes del PAC Docente</strong>, en modalidad online asíncrona, que buscan fortalecer la planificación de sus cursos desde un enfoque por competencias y centrado en el desempeño.</p>
     </div>
 
-    <h3 class="sise-section-title">
-      <span class="sise-title-number">03</span>
-      Logro del curso
-    </h3>
-
+    <h3 class="sise-section-title"><span class="sise-title-number">03</span>Logro del curso</h3>
     <div class="sise-goal-card">
       <p>
-        Diseñarás la alineación pedagógica de un curso propio, traduciendo
-        competencias y resultados de aprendizaje en desempeños observables
-        y evidencias coherentes bajo la lógica del diseño inverso, para
-        planificar experiencias centradas en el desempeño en entornos
-        virtuales.
+        Diseñarás la alineación pedagógica de un curso propio, traduciendo competencias y resultados de aprendizaje en desempeños observables y evidencias coherentes bajo la lógica del diseño inverso, para planificar experiencias centradas en el desempeño en entornos virtuales.
       </p>
     </div>
 
-    <h3 class="sise-section-title">
-      <span class="sise-title-number">04</span>
-      Competencia a desarrollar
-    </h3>
-
+    <h3 class="sise-section-title"><span class="sise-title-number">04</span>Competencia a desarrollar</h3>
     <div class="sise-competence">
-
       <strong>C2 · Competencias Pedagógicas</strong>
-
       <p>
-        El curso fortalece la planificación pedagógica mediante la lectura
-        del sílabo, la articulación de competencias y resultados de
-        aprendizaje, y la construcción de desempeños y evidencias
-        coherentes con el resultado esperado.
+        El curso fortalece la planificación pedagógica mediante la lectura del sílabo, la articulación de competencias y resultados de aprendizaje, y la construcción de desempeños y evidencias coherentes con el resultado esperado.
       </p>
-
     </div>
-
   </div>
 
-
-  <!-- ====================================================
-       PLANTILLA: MÓDULOS
-       ==================================================== -->
-
-  <div
-    id="sise-template-modulos"
-    class="sise-template"
-    data-kicker="Ruta de aprendizaje"
-    data-title="Panel de contenidos">
-
+  <!-- MÓDULOS -->
+  <div id="sise-template-modulos" class="sise-template" data-kicker="Ruta de aprendizaje" data-title="Ingresa a tus módulos">
     <p>
-      Avanza por los dos módulos de manera progresiva. Primero analizarás
-      la coherencia de tu sílabo y luego transformarás competencias y
-      resultados de aprendizaje en desempeños y evidencias alineadas.
+      Avanza por los dos módulos de manera progresiva. Primero analizarás la coherencia de tu sílabo y luego transformarás competencias y resultados de aprendizaje en desempeños y evidencias alineadas.
     </p>
 
     <div class="sise-modules-grid">
-
-
-      <!-- MÓDULO 1 -->
-
       <article class="sise-module-card">
-
         <div class="sise-module-top">
-
           <div class="sise-module-number">1</div>
-
-          <div class="sise-module-label">
-            Primer módulo
-          </div>
-
+          <div class="sise-module-label">Primer módulo</div>
         </div>
-
-        <h3>
-          El sílabo como herramienta de planificación
-        </h3>
-
-        <p>
-          Analiza los componentes del sílabo y su relación con el enfoque
-          por competencias, reconociéndolo como herramienta de planificación
-          pedagógica mediante el análisis guiado de un sílabo institucional real.
+        <h3>El sílabo como herramienta de planificación</h3>
+        <p class="sise-module-description">
+          Analiza los componentes del sílabo y su relación con el enfoque por competencias, reconociéndolo como herramienta de planificación pedagógica mediante el análisis guiado de un sílabo institucional real.
         </p>
-
         <div class="sise-module-topics">
-
           <strong>Temas del módulo</strong>
-
           <ul>
-            <li>
-              Estructura, componentes y finalidad pedagógica del sílabo.
-            </li>
-            <li>
-              Competencias, resultados de aprendizaje y evidencias.
-            </li>
-            <li>
-              Relación entre elementos, errores frecuentes y buenas prácticas.
-            </li>
-            <li>
-              <strong>Evidencia:</strong> diagnóstico de alineación del propio sílabo.
-            </li>
+            <li>Estructura, componentes y finalidad pedagógica del sílabo.</li>
+            <li>Competencias, resultados de aprendizaje y evidencias.</li>
+            <li>Relación entre elementos, errores frecuentes y buenas prácticas.</li>
+            <li>Evidencia: diagnóstico de alineación del propio sílabo.</li>
           </ul>
-
         </div>
-
-        <a
-          class="sise-module-btn"
-          href="https://aulad.educad.pe/courses/672/modules/1924"
-          target="_top"
-          rel="noopener">
-          Iniciar módulo 1&nbsp; →
-        </a>
-
+        <a class="sise-module-btn" href="https://aulad.educad.pe/courses/672/modules/1924">Iniciar módulo 1&nbsp; →</a>
       </article>
-
-
-      <!-- MÓDULO 2 -->
 
       <article class="sise-module-card">
-
         <div class="sise-module-top">
-
           <div class="sise-module-number">2</div>
-
-          <div class="sise-module-label">
-            Segundo módulo
-          </div>
-
+          <div class="sise-module-label">Segundo módulo</div>
         </div>
-
-        <h3>
-          De la competencia al desempeño observable
-        </h3>
-
-        <p>
-          Traduce competencias y resultados en desempeños observables y
-          construye la matriz de alineación integral de tu curso, aplicando
-          diseño inverso y coevaluación con rúbrica.
+        <h3>De la competencia al desempeño observable</h3>
+        <p class="sise-module-description">
+          Traduce competencias y resultados en desempeños observables y construye la matriz de alineación integral de tu curso, aplicando diseño inverso y coevaluación con rúbrica.
         </p>
-
         <div class="sise-module-topics">
-
           <strong>Temas del módulo</strong>
-
           <ul>
-            <li>
-              Interpretación de competencias y resultados de aprendizaje.
-            </li>
-            <li>
-              Desempeños observables, indicadores y verbos de acción.
-            </li>
-            <li>
-              Taxonomías de Bloom / Marzano, alineación constructiva y diseño inverso.
-            </li>
-            <li>
-              <strong>Evidencia:</strong> matriz de alineación competencia–desempeño.
-            </li>
+            <li>Interpretación de competencias y resultados de aprendizaje.</li>
+            <li>Desempeños observables, indicadores y verbos de acción.</li>
+            <li>Taxonomías de Bloom / Marzano, alineación constructiva y diseño inverso.</li>
+            <li>Evidencia: matriz de alineación competencia–desempeño.</li>
           </ul>
-
         </div>
-
-        <a
-          class="sise-module-btn"
-          href="https://aulad.educad.pe/courses/672/modules/1925"
-          target="_top"
-          rel="noopener">
-          Iniciar módulo 2&nbsp; →
-        </a>
-
+        <a class="sise-module-btn" href="https://aulad.educad.pe/courses/672/modules/1925">Iniciar módulo 2&nbsp; →</a>
       </article>
-
     </div>
-
   </div>
 
-
-  <!-- ====================================================
-       PLANTILLA: EVALUACIÓN
-       ==================================================== -->
-
-  <div
-    id="sise-template-evaluacion"
-    class="sise-template"
-    data-kicker="Evidencias de aprendizaje"
-    data-title="¿Cómo serás evaluado?">
-
+  <!-- EVALUACIÓN -->
+  <div id="sise-template-evaluacion" class="sise-template" data-kicker="Evidencias de aprendizaje" data-title="¿Cómo serás evaluado?">
     <p>
-      Tu evaluación está centrada en la práctica y en productos construidos
-      sobre tu propio curso. La fórmula indicada en el sílabo es:
-      <strong>NF = 40% A1 + 60% Trabajo final</strong>.
+      Tu evaluación está centrada en la práctica y en productos construidos sobre tu propio curso. La fórmula indicada en el sílabo es: <strong>NF = 40% A1 + 60% Trabajo final.</strong>
     </p>
 
     <div class="sise-evaluation-grid">
-
       <article class="sise-evaluation-card">
-
         <div class="sise-evaluation-icon">40%</div>
-
         <h3>Actividad 1 · Diagnóstico de alineación</h3>
-
         <p>
-          Analizarás tu propio sílabo para identificar la relación entre
-          competencia, resultado de aprendizaje y evidencia, reconociendo
-          fortalezas y posibles desalineaciones.
+          Analizarás tu propio sílabo para identificar la relación entre competencia, resultado de aprendizaje y evidencia, reconociendo fortalezas y posibles desalineaciones.
         </p>
-
       </article>
 
-
       <article class="sise-evaluation-card">
-
         <div class="sise-evaluation-icon">60%</div>
-
         <h3>Trabajo final · Matriz de alineación</h3>
-
         <p>
-          Construirás una matriz integral aplicada a un sílabo real:
-          competencia → resultado de aprendizaje → desempeño observable →
-          evidencia → tipo de actividad auténtica.
+          Construirás una matriz integral aplicada a un sílabo real: competencia → resultado de aprendizaje → desempeño observable → evidencia → tipo de actividad auténtica.
         </p>
-
       </article>
-
 
       <article class="sise-evaluation-card">
-
         <div class="sise-evaluation-icon">↻</div>
-
         <h3>Coevaluación y mejora</h3>
-
         <p>
-          Revisarás la matriz mediante una rúbrica de coevaluación y
-          utilizarás el feedback recibido para mejorar la versión final
-          de la alineación de tu curso.
+          Revisarás la matriz mediante una rúbrica de coevaluación y utilizarás el feedback recibido para mejorar la versión final de la alineación de tu curso.
         </p>
-
       </article>
-
     </div>
 
     <div class="sise-pass-card">
-
       <div class="sise-pass-number">17</div>
-
       <p>
-        Para aprobar el curso deberás cumplir con las evidencias solicitadas
-        y alcanzar una <strong>nota mínima aprobatoria de 17</strong>.
-        La certificación es digital y se gestiona desde el aula virtual.
+        Para aprobar el curso deberás cumplir con las evidencias solicitadas y alcanzar una <strong>nota mínima aprobatoria de 17</strong>. La certificación es digital y se gestiona desde el aula virtual.
       </p>
-
     </div>
-
   </div>
 
+  <!-- DESCARGABLES -->
+  <div id="sise-template-descargables" class="sise-template" data-kicker="Recursos de apoyo" data-title="Materiales para aplicar lo aprendido">
+    <p>
+      El curso contempla formatos descargables y ayudas de trabajo para aplicar la planificación directamente sobre tu propio curso.
+    </p>
 
-  <!-- ====================================================
-       PLANTILLA: DESCARGABLES
-       ==================================================== -->
-
-  <div
-    id="sise-template-descargables"
-    class="sise-template"
-    data-kicker="Materiales descargables"
-    data-title="Recursos y documentos de apoyo">
-
-    <div class="sise-download-content">
-
-      <div class="sise-download-icon">↓</div>
-
-      <h3>Materiales del curso</h3>
-
-      <p>
-        El curso contempla formatos descargables y ayudas de trabajo
-        para aplicar la planificación directamente sobre tu propio curso.
-      </p>
-
-      <div class="sise-resource-tags">
-        <span class="sise-resource-tag">Matriz de diagnóstico</span>
-        <span class="sise-resource-tag">Checklist de alineación</span>
-        <span class="sise-resource-tag">Guía de verbos observables</span>
-        <span class="sise-resource-tag">Rúbrica de coevaluación</span>
-      </div>
-
-      <div class="sise-download-actions">
-
-        <a
-          class="sise-download-btn"
-          href="https://aulad.educad.pe/courses/672/modules"
-          target="_top"
-          rel="noopener">
-          Ir al aula del curso&nbsp; →
-        </a>
-
-        <a
-          class="sise-download-btn sise-download-btn-alt"
-          href="https://aulad.educad.pe/courses/672/files"
-          target="_top"
-          rel="noopener">
-          Archivos del curso&nbsp; →
-        </a>
-
-      </div>
-
+    <div class="sise-download-grid">
+      <div class="sise-download-card"><span class="sise-download-icon">↓</span><strong>Matriz de diagnóstico</strong></div>
+      <div class="sise-download-card"><span class="sise-download-icon">✓</span><strong>Checklist de alineación</strong></div>
+      <div class="sise-download-card"><span class="sise-download-icon">Aa</span><strong>Guía de verbos observables</strong></div>
+      <div class="sise-download-card"><span class="sise-download-icon">★</span><strong>Rúbrica de coevaluación</strong></div>
     </div>
 
+    <div class="sise-download-actions">
+      <a class="sise-btn-primary" href="https://aulad.educad.pe/courses/672/modules">Ir al aula del curso&nbsp; →</a>
+      <a class="sise-btn-secondary" href="https://aulad.educad.pe/courses/672/files">Archivos del curso&nbsp; →</a>
+    </div>
   </div>
-
 </div>
 
-
-<!-- ======================================================
-     INTERACCIÓN
-     ====================================================== -->
-
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
 <script>
 (function(){
-
-  var component = document.getElementById("sise-diseno-inverso-home");
-
-  if(!component){
-    return;
-  }
+  var component = document.getElementById("sise-dipdiev-home");
+  if(!component) return;
 
   var buttons = component.querySelectorAll(".sise-nav-button");
   var kicker = component.querySelector("#sise-dynamic-kicker");
   var title = component.querySelector("#sise-dynamic-title");
   var body = component.querySelector("#sise-dynamic-body");
 
+  function prepareExternalLinks(container){
+    if(!container) return;
+    var links = container.querySelectorAll("a[href]");
+    links.forEach(function(link){
+      var href = link.getAttribute("href");
+      if(href && !href.startsWith("#") && !href.startsWith("javascript:")){
+        link.setAttribute("target","_blank");
+        link.setAttribute("rel","noopener noreferrer");
+      }
+    });
+  }
+
   function changeSection(section, selectedButton){
-
-    var template = component.querySelector(
-      "#sise-template-" + section
-    );
-
-    if(!template){
-      return;
-    }
+    var template = component.querySelector("#sise-template-" + section);
+    if(!template) return;
 
     kicker.textContent = template.getAttribute("data-kicker");
     title.textContent = template.getAttribute("data-title");
 
     body.style.animation = "none";
-
-    /* Fuerza el reinicio de la animación */
     body.offsetHeight;
-
     body.innerHTML = template.innerHTML;
     body.style.animation = "siseFadeIn .35s ease";
+    prepareExternalLinks(body);
 
     buttons.forEach(function(button){
-
       var isActive = button === selectedButton;
-
-      button.classList.toggle("active", isActive);
-
-      button.setAttribute(
-        "aria-selected",
-        isActive ? "true" : "false"
-      );
-
+      button.classList.toggle("active",isActive);
+      button.setAttribute("aria-selected",isActive ? "true" : "false");
     });
-
   }
 
   buttons.forEach(function(button){
-
-    button.addEventListener("click", function(){
-
-      changeSection(
-        button.getAttribute("data-section"),
-        button
-      );
-
+    button.addEventListener("click",function(){
+      changeSection(button.getAttribute("data-section"),button);
     });
-
   });
 
+  prepareExternalLinks(component);
 })();
 </script>
 
 </div>
-
-</body>
-</html>
