@@ -166,7 +166,6 @@
 
 /* =========================================================
    DATOS DEL CURSO
-   COMPACTO Y EN UNA SOLA LÍNEA EN CANVAS
 ========================================================= */
 
 #sise-dipdiev-home .sise-stats-wrap{
@@ -744,65 +743,92 @@
 
 
 /* =========================================================
-   COEVALUACIÓN
+   COEVALUACIÓN PRÁCTICA OPCIONAL
 ========================================================= */
 
-#sise-dipdiev-home .sise-coeval-card{
-  display:flex;
-  flex-direction:column;
+#sise-dipdiev-home .sise-optional-card{
+  grid-column:1 / -1;
+  display:grid;
+  grid-template-columns:72px 1fr;
+  gap:18px;
+  align-items:start;
+  min-height:auto;
+  margin-top:10px;
+  padding:29px 31px;
+  border:1px solid #F3CBD7;
+  border-left:7px solid var(--pink);
+  border-top:1px solid #F3CBD7;
+  border-radius:16px;
+  background:linear-gradient(105deg,#FFF3F7 0%,#FFF9FB 54%,#FFFFFF 100%);
+  box-shadow:none;
 }
 
-#sise-dipdiev-home .sise-coeval-intro{
-  margin-bottom:13px !important;
+#sise-dipdiev-home .sise-optional-card .sise-evaluation-icon{
+  width:60px;
+  height:60px;
+  margin:0;
+  font-size:20px;
 }
 
-#sise-dipdiev-home .sise-coeval-flow{
-  display:flex;
-  align-items:stretch;
-  gap:5px;
-  margin:5px 0 16px;
-}
-
-#sise-dipdiev-home .sise-coeval-step{
-  flex:1;
+#sise-dipdiev-home .sise-optional-content{
   min-width:0;
-  padding:9px 5px;
-  border:1px solid #F1D5DE;
-  border-radius:8px;
-  background:#FFF4F7;
-  text-align:center;
 }
 
-#sise-dipdiev-home .sise-coeval-step strong{
-  display:block;
-  margin-bottom:3px;
-  color:var(--pink);
-  font-size:11px;
-  font-weight:900;
-}
-
-#sise-dipdiev-home .sise-coeval-step span{
-  display:block;
-  color:#4D4548;
-  font-size:10px;
-  line-height:1.2;
-  font-weight:700;
-}
-
-#sise-dipdiev-home .sise-coeval-arrow{
-  display:flex;
+#sise-dipdiev-home .sise-optional-badge{
+  display:inline-flex;
   align-items:center;
   justify-content:center;
-  flex:0 0 12px;
+  margin:0 0 10px;
+  padding:6px 13px;
+  border:1px solid #F2CAD7;
+  border-radius:999px;
   color:var(--pink);
-  font-size:18px;
+  background:#FFFFFF;
+  font-size:12px;
+  line-height:1;
   font-weight:900;
+  letter-spacing:.7px;
+  text-transform:uppercase;
+}
+
+#sise-dipdiev-home .sise-optional-card h3{
+  margin:0 0 11px;
+  color:#231F20;
+  font-size:21px;
+  line-height:1.25;
+}
+
+#sise-dipdiev-home .sise-optional-card p{
+  max-width:1050px;
+  margin:0;
+  color:#665E61;
+  font-size:14px;
+  line-height:1.6;
+}
+
+#sise-dipdiev-home .sise-optional-actions{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  flex-wrap:wrap;
+  margin-top:17px;
+}
+
+#sise-dipdiev-home .sise-optional-note{
+  display:inline-flex;
+  align-items:center;
+  min-height:43px;
+  padding:10px 14px;
+  border-radius:8px;
+  color:#FFFFFF;
+  background:#231F20;
+  font-size:13px;
+  line-height:1.2;
+  font-weight:800;
 }
 
 #sise-dipdiev-home .sise-coeval-manual-btn{
-  width:100%;
-  margin-top:auto;
-  padding:11px 13px;
+  padding:11px 16px;
   border:0;
   border-radius:8px;
   color:#FFFFFF;
@@ -811,6 +837,13 @@
   font-family:Arial,Helvetica,sans-serif;
   font-size:13px;
   font-weight:800;
+}
+
+#sise-dipdiev-home .sise-optional-card .sise-coeval-manual-btn{
+  width:auto;
+  min-height:43px;
+  margin:0;
+  padding:10px 18px;
 }
 
 #sise-dipdiev-home .sise-coeval-manual-btn:hover{
@@ -1011,8 +1044,7 @@
 
 
 /* =========================================================
-   RESPONSIVE CANVAS / TABLET
-   SE MANTIENE EN UNA SOLA FILA
+   RESPONSIVE
 ========================================================= */
 
 @media screen and (max-width:900px){
@@ -1044,30 +1076,6 @@
     border-bottom:none;
   }
 
-  #sise-dipdiev-home .sise-stats td:last-child{
-    border-right:none;
-  }
-
-  #sise-dipdiev-home .sise-stat-icon{
-    width:30px;
-    height:30px;
-    margin-bottom:6px;
-  }
-
-  #sise-dipdiev-home .sise-stat-icon svg{
-    width:15px;
-    height:15px;
-  }
-
-  #sise-dipdiev-home .sise-stat-value{
-    font-size:14px;
-  }
-
-  #sise-dipdiev-home .sise-stat-label{
-    max-width:110px;
-    font-size:9.5px;
-  }
-
   #sise-dipdiev-home .sise-modules-grid{
     grid-template-columns:1fr;
   }
@@ -1079,12 +1087,12 @@
   #sise-dipdiev-home .sise-evaluation-card{
     min-height:auto;
   }
+
+  #sise-dipdiev-home .sise-optional-card{
+    grid-column:auto;
+  }
 }
 
-
-/* =========================================================
-   MÓVIL
-========================================================= */
 
 @media screen and (max-width:540px){
 
@@ -1145,14 +1153,6 @@
     border-bottom:none;
   }
 
-  #sise-dipdiev-home .sise-stat-value{
-    font-size:15px;
-  }
-
-  #sise-dipdiev-home .sise-stat-label{
-    font-size:10px;
-  }
-
   #sise-dipdiev-home .sise-navigation{
     grid-template-columns:1fr;
   }
@@ -1197,14 +1197,26 @@
     margin:0 auto 20px;
   }
 
-  #sise-dipdiev-home .sise-coeval-flow{
-    display:grid;
+  #sise-dipdiev-home .sise-optional-card{
     grid-template-columns:1fr;
+    padding:24px 21px;
   }
 
-  #sise-dipdiev-home .sise-coeval-arrow{
-    transform:rotate(90deg);
-    min-height:12px;
+  #sise-dipdiev-home .sise-optional-card .sise-evaluation-icon{
+    width:52px;
+    height:52px;
+  }
+
+  #sise-dipdiev-home .sise-optional-actions{
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  #sise-dipdiev-home .sise-optional-note,
+  #sise-dipdiev-home .sise-optional-card .sise-coeval-manual-btn{
+    width:100%;
+    justify-content:center;
+    text-align:center;
   }
 
   #sise-dipdiev-home .sise-coeval-modal{
@@ -1219,13 +1231,19 @@
 }
 </style>
 
+
 <!-- =========================================================
      PORTADA
 ========================================================= -->
+
 <div class="sise-hero">
+
   <div class="sise-dot-pattern"></div>
+
   <div class="sise-container">
+
     <div class="sise-hero-content">
+
       <div class="sise-eyebrow">
         <span class="sise-eyebrow-dot"></span>
         Programa de Capacitación Docente · PAC 2026
@@ -1238,347 +1256,1121 @@
       </h1>
 
       <p class="sise-hero-description">
-        Convierte tu sílabo en una herramienta de planificación pedagógica: aprende a traducir competencias y resultados de aprendizaje en desempeños observables, evidencias coherentes y experiencias diseñadas desde el resultado esperado.
+        Convierte tu sílabo en una herramienta de planificación pedagógica:
+        aprende a traducir competencias y resultados de aprendizaje en
+        desempeños observables, evidencias coherentes y experiencias diseñadas
+        desde el resultado esperado.
       </p>
 
-      <a class="sise-btn-primary" href="https://aulad.educad.pe/courses/672/modules">
+      <a
+        class="sise-btn-primary"
+        href="https://aulad.educad.pe/courses/672/modules">
         Iniciar recorrido&nbsp; →
       </a>
+
     </div>
+
   </div>
+
 </div>
+
 
 <!-- =========================================================
      DATOS DEL CURSO
 ========================================================= -->
+
 <div class="sise-stats-wrap">
+
   <table class="sise-stats">
+
     <tbody>
+
       <tr>
+
         <td>
+
           <div class="sise-stat-icon">
+
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <polygon points="12 2 22 7 12 12 2 7 12 2"></polygon>
               <polyline points="2 12 12 17 22 12"></polyline>
               <polyline points="2 17 12 22 22 17"></polyline>
             </svg>
+
           </div>
-          <div class="sise-stat-value">2 módulos</div>
-          <p class="sise-stat-label">Ruta de aprendizaje aplicada</p>
+
+          <div class="sise-stat-value">
+            2 módulos
+          </div>
+
+          <p class="sise-stat-label">
+            Ruta de aprendizaje aplicada
+          </p>
+
         </td>
 
-        <td>
-          <div class="sise-stat-icon">▶</div>
-          <div class="sise-stat-value">Online</div>
-          <p class="sise-stat-label">Canvas · modalidad asíncrona</p>
-        </td>
 
         <td>
+
           <div class="sise-stat-icon">
+            ▶
+          </div>
+
+          <div class="sise-stat-value">
+            Online
+          </div>
+
+          <p class="sise-stat-label">
+            Canvas · modalidad asíncrona
+          </p>
+
+        </td>
+
+
+        <td>
+
+          <div class="sise-stat-icon">
+
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <circle cx="12" cy="12" r="9"></circle>
               <path d="M12 7v5l3.5 2"></path>
             </svg>
+
           </div>
-          <div class="sise-stat-value">3 horas</div>
-          <p class="sise-stat-label">Tiempo estimado</p>
+
+          <div class="sise-stat-value">
+            3 horas
+          </div>
+
+          <p class="sise-stat-label">
+            Tiempo estimado
+          </p>
+
         </td>
 
+
         <td>
+
           <div class="sise-stat-icon">
+
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <rect x="3" y="5" width="18" height="16" rx="2"></rect>
               <path d="M8 3v4"></path>
               <path d="M16 3v4"></path>
               <path d="M3 10h18"></path>
             </svg>
+
           </div>
-          <div class="sise-stat-value">2 meses</div>
-          <p class="sise-stat-label">Vigencia del curso</p>
+
+          <div class="sise-stat-value">
+            2 meses
+          </div>
+
+          <p class="sise-stat-label">
+            Vigencia del curso
+          </p>
+
         </td>
 
+
         <td>
-          <div class="sise-stat-icon">✓</div>
-          <div class="sise-stat-value">Certificación</div>
-          <p class="sise-stat-label">Nota mínima aprobatoria: 17</p>
+
+          <div class="sise-stat-icon">
+            ✓
+          </div>
+
+          <div class="sise-stat-value">
+            Certificación
+          </div>
+
+          <p class="sise-stat-label">
+            Nota mínima aprobatoria: 17
+          </p>
+
         </td>
+
       </tr>
+
     </tbody>
+
   </table>
+
 </div>
+
 
 <!-- =========================================================
      NAVEGACIÓN
 ========================================================= -->
-<div class="sise-container" id="sise-contenido-dinamico">
+
+<div
+  class="sise-container"
+  id="sise-contenido-dinamico">
+
 
   <div class="sise-intro">
+
     <p>
       <strong>Instrucción:</strong>
       selecciona uno de los botones para consultar la información.
       El contenido se mostrará en una única caja dinámica.
     </p>
+
   </div>
 
-  <div class="sise-navigation" role="tablist" aria-label="Secciones del curso">
-    <button type="button" class="sise-nav-button active" data-section="sobre-curso" role="tab" aria-selected="true">
+
+  <div
+    class="sise-navigation"
+    role="tablist"
+    aria-label="Secciones del curso">
+
+
+    <button
+      type="button"
+      class="sise-nav-button active"
+      data-section="sobre-curso"
+      role="tab"
+      aria-selected="true">
+
       <span class="sise-nav-icon">i</span>
       Sobre el curso
+
     </button>
 
-    <button type="button" class="sise-nav-button" data-section="modulos" role="tab" aria-selected="false">
+
+    <button
+      type="button"
+      class="sise-nav-button"
+      data-section="modulos"
+      role="tab"
+      aria-selected="false">
+
       <span class="sise-nav-icon">☰</span>
       Módulos
+
     </button>
 
-    <button type="button" class="sise-nav-button" data-section="evaluacion" role="tab" aria-selected="false">
+
+    <button
+      type="button"
+      class="sise-nav-button"
+      data-section="evaluacion"
+      role="tab"
+      aria-selected="false">
+
       <span class="sise-nav-icon">✓</span>
       Evaluación
+
     </button>
+
   </div>
 
-  <section class="sise-dynamic-box" aria-live="polite" aria-atomic="true">
+
+  <!-- =====================================================
+       CAJA DINÁMICA INICIAL
+  ====================================================== -->
+
+  <section
+    class="sise-dynamic-box"
+    aria-live="polite"
+    aria-atomic="true">
+
+
     <div class="sise-dynamic-header">
-      <span class="sise-dynamic-kicker" id="sise-dynamic-kicker">Información general</span>
-      <h2 class="sise-dynamic-title" id="sise-dynamic-title">Conoce el propósito del curso</h2>
+
+      <span
+        class="sise-dynamic-kicker"
+        id="sise-dynamic-kicker">
+        Información general
+      </span>
+
+      <h2
+        class="sise-dynamic-title"
+        id="sise-dynamic-title">
+        Conoce el propósito del curso
+      </h2>
+
     </div>
 
-    <div class="sise-dynamic-body" id="sise-dynamic-body">
-<h3 class="sise-section-title">
+
+    <div
+      class="sise-dynamic-body"
+      id="sise-dynamic-body">
+
+
+      <h3 class="sise-section-title">
         <span class="sise-title-number">01</span>
         Descripción del curso
       </h3>
 
       <p>
-        En este curso analizarás el sílabo desde una perspectiva pedagógica para convertirlo en una herramienta real de planificación. Trabajarás la relación entre competencias, resultados de aprendizaje, desempeños observables y evidencias, aplicando la lógica del diseño inverso para fortalecer la coherencia de un curso propio.
+        En este curso analizarás el sílabo desde una perspectiva pedagógica
+        para convertirlo en una herramienta real de planificación. Trabajarás
+        la relación entre competencias, resultados de aprendizaje, desempeños
+        observables y evidencias, aplicando la lógica del diseño inverso para
+        fortalecer la coherencia de un curso propio.
       </p>
 
       <p>
-        La experiencia se desarrolla mediante <strong>Action Mapping</strong>, aprendizaje basado en escenarios y <strong>microlearning</strong>, priorizando decisiones y acciones aplicadas sobre tu propio sílabo.
+        La experiencia se desarrolla mediante <strong>Action Mapping</strong>,
+        aprendizaje basado en escenarios y <strong>microlearning</strong>,
+        priorizando decisiones y acciones aplicadas sobre tu propio sílabo.
       </p>
 
+
       <h3 class="sise-section-title">
-        <span class="sise-title-number">02</span>
+
+        <span class="sise-title-number">
+          02
+        </span>
+
         ¿A quiénes está dirigido?
+
       </h3>
 
       <div class="sise-audience-card">
+
         <p>
-          <strong>Docentes SISE participantes del PAC Docente</strong>, en modalidad online asíncrona, que buscan fortalecer la planificación de sus cursos desde un enfoque por competencias y centrado en el desempeño.
+          <strong>Docentes SISE participantes del PAC Docente</strong>,
+          en modalidad online asíncrona, que buscan fortalecer la planificación
+          de sus cursos desde un enfoque por competencias y centrado
+          en el desempeño.
         </p>
+
       </div>
 
+
       <h3 class="sise-section-title">
-        <span class="sise-title-number">03</span>
+
+        <span class="sise-title-number">
+          03
+        </span>
+
         Logro del curso
+
       </h3>
+
 
       <div class="sise-goal-card">
+
         <p>
-          Diseñarás la alineación pedagógica de un curso propio, traduciendo competencias y resultados de aprendizaje en desempeños observables y evidencias coherentes bajo la lógica del diseño inverso, para planificar experiencias centradas en el desempeño en entornos virtuales.
+          Diseñarás la alineación pedagógica de un curso propio, traduciendo
+          competencias y resultados de aprendizaje en desempeños observables
+          y evidencias coherentes bajo la lógica del diseño inverso, para
+          planificar experiencias centradas en el desempeño en entornos
+          virtuales.
         </p>
+
       </div>
+
 
       <h3 class="sise-section-title">
-        <span class="sise-title-number">04</span>
+
+        <span class="sise-title-number">
+          04
+        </span>
+
         Competencia a desarrollar
+
       </h3>
 
+
       <div class="sise-competence">
-        <strong>C2 · Competencias Pedagógicas</strong>
+
+        <strong>
+          C2 · Competencias Pedagógicas
+        </strong>
+
         <p>
-          El curso fortalece la planificación pedagógica mediante la lectura del sílabo, la articulación de competencias y resultados de aprendizaje, y la construcción de desempeños y evidencias coherentes con el resultado esperado.
+          El curso fortalece la planificación pedagógica mediante la lectura
+          del sílabo, la articulación de competencias y resultados de aprendizaje,
+          y la construcción de desempeños y evidencias coherentes con el resultado
+          esperado.
         </p>
+
       </div>
+
     </div>
+
   </section>
 
-  <div id="sise-template-sobre-curso" class="sise-template" data-kicker="Información general" data-title="Conoce el propósito del curso">
-<h3 class="sise-section-title">
-        <span class="sise-title-number">01</span>
-        Descripción del curso
-      </h3>
+
+  <!-- =====================================================
+       SOBRE EL CURSO
+  ====================================================== -->
+
+  <div
+    id="sise-template-sobre-curso"
+    class="sise-template"
+    data-kicker="Información general"
+    data-title="Conoce el propósito del curso">
+
+
+    <h3 class="sise-section-title">
+      <span class="sise-title-number">01</span>
+      Descripción del curso
+    </h3>
+
+    <p>
+      En este curso analizarás el sílabo desde una perspectiva pedagógica
+      para convertirlo en una herramienta real de planificación. Trabajarás
+      la relación entre competencias, resultados de aprendizaje, desempeños
+      observables y evidencias, aplicando la lógica del diseño inverso para
+      fortalecer la coherencia de un curso propio.
+    </p>
+
+    <p>
+      La experiencia se desarrolla mediante <strong>Action Mapping</strong>,
+      aprendizaje basado en escenarios y <strong>microlearning</strong>,
+      priorizando decisiones y acciones aplicadas sobre tu propio sílabo.
+    </p>
+
+
+    <h3 class="sise-section-title">
+      <span class="sise-title-number">02</span>
+      ¿A quiénes está dirigido?
+    </h3>
+
+    <div class="sise-audience-card">
 
       <p>
-        En este curso analizarás el sílabo desde una perspectiva pedagógica para convertirlo en una herramienta real de planificación. Trabajarás la relación entre competencias, resultados de aprendizaje, desempeños observables y evidencias, aplicando la lógica del diseño inverso para fortalecer la coherencia de un curso propio.
+        <strong>Docentes SISE participantes del PAC Docente</strong>,
+        en modalidad online asíncrona, que buscan fortalecer la planificación
+        de sus cursos desde un enfoque por competencias y centrado
+        en el desempeño.
       </p>
+
+    </div>
+
+
+    <h3 class="sise-section-title">
+
+      <span class="sise-title-number">
+        03
+      </span>
+
+      Logro del curso
+
+    </h3>
+
+    <div class="sise-goal-card">
 
       <p>
-        La experiencia se desarrolla mediante <strong>Action Mapping</strong>, aprendizaje basado en escenarios y <strong>microlearning</strong>, priorizando decisiones y acciones aplicadas sobre tu propio sílabo.
+        Diseñarás la alineación pedagógica de un curso propio, traduciendo
+        competencias y resultados de aprendizaje en desempeños observables
+        y evidencias coherentes bajo la lógica del diseño inverso, para
+        planificar experiencias centradas en el desempeño en entornos virtuales.
       </p>
 
-      <h3 class="sise-section-title">
-        <span class="sise-title-number">02</span>
-        ¿A quiénes está dirigido?
-      </h3>
+    </div>
 
-      <div class="sise-audience-card">
-        <p>
-          <strong>Docentes SISE participantes del PAC Docente</strong>, en modalidad online asíncrona, que buscan fortalecer la planificación de sus cursos desde un enfoque por competencias y centrado en el desempeño.
-        </p>
-      </div>
 
-      <h3 class="sise-section-title">
-        <span class="sise-title-number">03</span>
-        Logro del curso
-      </h3>
+    <h3 class="sise-section-title">
 
-      <div class="sise-goal-card">
-        <p>
-          Diseñarás la alineación pedagógica de un curso propio, traduciendo competencias y resultados de aprendizaje en desempeños observables y evidencias coherentes bajo la lógica del diseño inverso, para planificar experiencias centradas en el desempeño en entornos virtuales.
-        </p>
-      </div>
+      <span class="sise-title-number">
+        04
+      </span>
 
-      <h3 class="sise-section-title">
-        <span class="sise-title-number">04</span>
-        Competencia a desarrollar
-      </h3>
+      Competencia a desarrollar
 
-      <div class="sise-competence">
-        <strong>C2 · Competencias Pedagógicas</strong>
-        <p>
-          El curso fortalece la planificación pedagógica mediante la lectura del sílabo, la articulación de competencias y resultados de aprendizaje, y la construcción de desempeños y evidencias coherentes con el resultado esperado.
-        </p>
-      </div>
+    </h3>
+
+
+    <div class="sise-competence">
+
+      <strong>
+        C2 · Competencias Pedagógicas
+      </strong>
+
+      <p>
+        El curso fortalece la planificación pedagógica mediante la lectura
+        del sílabo, la articulación de competencias y resultados de aprendizaje,
+        y la construcción de desempeños y evidencias coherentes con el resultado
+        esperado.
+      </p>
+
+    </div>
+
   </div>
 
-  <div id="sise-template-modulos" class="sise-template" data-kicker="Ruta de aprendizaje" data-title="Ingresa a tus módulos">
-<p>
-      Avanza por los dos módulos de manera progresiva. Primero analizarás la coherencia de tu sílabo y luego transformarás competencias y resultados de aprendizaje en desempeños y evidencias alineadas.
+
+  <!-- =====================================================
+       MÓDULOS
+  ====================================================== -->
+
+  <div
+    id="sise-template-modulos"
+    class="sise-template"
+    data-kicker="Ruta de aprendizaje"
+    data-title="Ingresa a tus módulos">
+
+
+    <p>
+      Avanza por los dos módulos de manera progresiva. Primero analizarás la
+      coherencia de tu sílabo y luego transformarás competencias y resultados
+      de aprendizaje en desempeños y evidencias alineadas.
     </p>
+
 
     <div class="sise-modules-grid">
 
+
       <article class="sise-module-card">
+
         <div class="sise-module-top">
-          <div class="sise-module-number">1</div>
-          <div class="sise-module-label">Módulo 1</div>
+
+          <div class="sise-module-number">
+            1
+          </div>
+
+          <div class="sise-module-label">
+            Módulo 1
+          </div>
+
         </div>
 
-        <h3>El sílabo como herramienta de planificación</h3>
+
+        <h3>
+          El sílabo como herramienta de planificación
+        </h3>
+
 
         <p class="sise-module-help">
-          Analiza los componentes del sílabo y su relación con el enfoque por competencias, reconociéndolo como herramienta de planificación pedagógica mediante el análisis guiado de un sílabo institucional real.
+          Analiza los componentes del sílabo y su relación con el enfoque
+          por competencias, reconociéndolo como herramienta de planificación
+          pedagógica mediante el análisis guiado de un sílabo institucional real.
         </p>
 
-        <a class="sise-module-btn" href="https://aulad.educad.pe/courses/672/modules/1924">
+
+        <a
+          class="sise-module-btn"
+          href="https://aulad.educad.pe/courses/672/modules/1924">
           Iniciar módulo 1&nbsp; →
         </a>
+
       </article>
 
+
       <article class="sise-module-card">
+
         <div class="sise-module-top">
-          <div class="sise-module-number">2</div>
-          <div class="sise-module-label">Módulo 2</div>
+
+          <div class="sise-module-number">
+            2
+          </div>
+
+          <div class="sise-module-label">
+            Módulo 2
+          </div>
+
         </div>
 
-        <h3>De la competencia al desempeño observable</h3>
+
+        <h3>
+          De la competencia al desempeño observable
+        </h3>
+
 
         <p class="sise-module-help">
-          Traduce competencias y resultados en desempeños observables y construye la matriz de alineación integral de tu curso, aplicando diseño inverso y coevaluación con rúbrica.
+          Traduce competencias y resultados en desempeños observables y construye
+          la matriz de alineación integral de tu curso, aplicando diseño inverso
+          y coevaluación con rúbrica.
         </p>
 
-        <a class="sise-module-btn" href="https://aulad.educad.pe/courses/672/modules/1925">
+
+        <a
+          class="sise-module-btn"
+          href="https://aulad.educad.pe/courses/672/modules/1925">
           Iniciar módulo 2&nbsp; →
         </a>
+
       </article>
 
     </div>
+
   </div>
 
-  <div id="sise-template-evaluacion" class="sise-template" data-kicker="Evidencias de aprendizaje" data-title="¿Cómo serás evaluado?">
-<p>
-      Tu evaluación está centrada en la práctica y en productos construidos sobre tu propio curso. La fórmula indicada en el sílabo es: <strong>NF = 40% A1 + 60% Trabajo final.</strong>
+
+  <!-- =====================================================
+       EVALUACIÓN ACTUALIZADA
+  ====================================================== -->
+
+  <div
+    id="sise-template-evaluacion"
+    class="sise-template"
+    data-kicker="Evidencias de aprendizaje"
+    data-title="¿Cómo serás evaluado?">
+
+
+    <p>
+      La evaluación del curso considera actividades por módulo para validar
+      conocimientos, con un peso de <strong>25% cada una</strong>; la participación
+      en el foro, con un peso total de <strong>10%</strong>; y una evaluación final
+      mediante <strong>Quizizz</strong>, con un peso de <strong>40%</strong>.
     </p>
+
 
     <div class="sise-evaluation-grid">
 
-      <article class="sise-evaluation-card">
-        <div class="sise-evaluation-icon">40%</div>
-        <h3>Actividad 1 · Diagnóstico de alineación</h3>
-        <p>
-          Analizarás tu propio sílabo para identificar la relación entre competencia, resultado de aprendizaje y evidencia, reconociendo fortalezas y posibles desalineaciones.
-        </p>
-      </article>
+
+      <!-- TARJETA 01 -->
 
       <article class="sise-evaluation-card">
-        <div class="sise-evaluation-icon">60%</div>
-        <h3>Trabajo final · Matriz de alineación</h3>
+
+        <div class="sise-evaluation-icon">
+          01
+        </div>
+
+        <h3>
+          Actividades por módulo
+        </h3>
+
         <p>
-          Construirás una matriz integral aplicada a un sílabo real: competencia → resultado de aprendizaje → desempeño observable → evidencia → tipo de actividad auténtica.
+          En cada módulo desarrollarás una actividad orientada a
+          <strong>validar los conocimientos alcanzados</strong>.
+          Cada actividad representa el
+          <strong>25% de la nota final</strong>.
         </p>
+
       </article>
 
+
+      <!-- TARJETA 02 -->
+
       <article class="sise-evaluation-card">
-        <div class="sise-evaluation-icon">↻</div>
-        <h3>Coevaluación y mejora</h3>
+
+        <div class="sise-evaluation-icon">
+          02
+        </div>
+
+        <h3>
+          Participación
+        </h3>
+
         <p>
-          Revisarás la matriz mediante una rúbrica de coevaluación y utilizarás el feedback recibido para mejorar la versión final de la alineación de tu curso.
+          Se considerará tu participación en el
+          <strong>foro del curso</strong>, donde compartirás tus reflexiones
+          y aportes de acuerdo con las indicaciones planteadas.
+          Esta participación representa el
+          <strong>10% de la nota final</strong>.
         </p>
+
+      </article>
+
+
+      <!-- TARJETA 03 -->
+
+      <article class="sise-evaluation-card">
+
+        <div class="sise-evaluation-icon">
+          03
+        </div>
+
+        <h3>
+          Evaluación final
+        </h3>
+
+        <p>
+          Al finalizar el curso realizarás una
+          <strong>evaluación mediante Quizizz</strong> para demostrar
+          los conocimientos desarrollados a lo largo de los módulos.
+          Esta evaluación representa el
+          <strong>40% de la nota final</strong>.
+        </p>
+
+      </article>
+
+
+      <!-- COEVALUACIÓN PRÁCTICA OPCIONAL -->
+
+      <article class="sise-evaluation-card sise-optional-card">
+
+        <div class="sise-evaluation-icon">
+          +
+        </div>
+
+
+        <div class="sise-optional-content">
+
+          <span class="sise-optional-badge">
+            Opcional · Sin nota
+          </span>
+
+          <h3>
+            Coevaluación práctica
+          </h3>
+
+          <p>
+            Es una <strong>actividad integradora opcional</strong> que podrás ir
+            desarrollando progresivamente en cada módulo. Su propósito es permitirte
+            aplicar e integrar los aprendizajes del curso a medida que avanzas en tu
+            recorrido formativo.
+          </p>
+
+
+          <div class="sise-optional-actions">
+
+            <span class="sise-optional-note">
+              Actividad formativa · No tiene calificación
+            </span>
+
+
+            <button
+              type="button"
+              class="sise-coeval-manual-btn sise-open-coeval">
+              Manual de coevaluación&nbsp; →
+            </button>
+
+          </div>
+
+        </div>
+
       </article>
 
     </div>
+
 
     <div class="sise-pass-card">
-      <div class="sise-pass-number">17</div>
+
+      <div class="sise-pass-number">
+        17
+      </div>
+
       <p>
-        Para aprobar el curso deberás cumplir con las evidencias solicitadas y alcanzar una <strong>nota mínima aprobatoria de 17</strong>. La certificación es digital y se gestiona desde el aula virtual.
+        Para aprobar el curso deberás cumplir con las evidencias solicitadas
+        y alcanzar una <strong>nota mínima aprobatoria de 17</strong>.
+        La certificación es digital y se gestiona desde el aula virtual.
       </p>
+
     </div>
+
   </div>
 
 </div>
 
+
+<!-- =========================================================
+     MANUAL DE COEVALUACIÓN
+========================================================= -->
+
+<div
+  class="sise-coeval-modal"
+  id="sise-coeval-modal"
+  aria-hidden="true">
+
+
+  <div
+    class="sise-coeval-modal-panel"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="sise-coeval-modal-title">
+
+
+    <div class="sise-coeval-modal-head">
+
+      <button
+        type="button"
+        class="sise-coeval-close"
+        aria-label="Cerrar manual">
+        ×
+      </button>
+
+
+      <small>
+        Guía rápida · Evaluación entre pares
+      </small>
+
+
+      <h3 id="sise-coeval-modal-title">
+        Manual de coevaluación
+      </h3>
+
+    </div>
+
+
+    <div class="sise-coeval-modal-body">
+
+
+      <p class="sise-coeval-modal-intro">
+        La coevaluación consiste en revisar el trabajo de un compañero
+        utilizando los criterios definidos en la rúbrica. La valoración
+        debe sustentarse en las evidencias presentadas y ofrecer una
+        retroalimentación útil y respetuosa.
+      </p>
+
+
+      <div class="sise-manual-route">
+
+
+        <div class="sise-manual-step">
+
+          <div class="sise-manual-step-num">
+            01
+          </div>
+
+          <div>
+
+            <h4>
+              Lee la rúbrica
+            </h4>
+
+            <p>
+              Revisa los criterios, niveles de logro y descriptores antes
+              de iniciar la valoración.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="sise-manual-step">
+
+          <div class="sise-manual-step-num">
+            02
+          </div>
+
+          <div>
+
+            <h4>
+              Revisa las evidencias
+            </h4>
+
+            <p>
+              Observa el trabajo presentado por tu compañero e identifica
+              evidencias relacionadas con cada criterio.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="sise-manual-step">
+
+          <div class="sise-manual-step-num">
+            03
+          </div>
+
+          <div>
+
+            <h4>
+              Aplica la rúbrica
+            </h4>
+
+            <p>
+              Contrasta las evidencias con los descriptores y selecciona
+              el nivel de logro correspondiente.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="sise-manual-step">
+
+          <div class="sise-manual-step-num">
+            04
+          </div>
+
+          <div>
+
+            <h4>
+              Brinda retroalimentación
+            </h4>
+
+            <p>
+              Explica brevemente qué observaste, reconoce fortalezas y señala
+              una oportunidad concreta de mejora.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="sise-manual-note">
+
+        <strong>Recuerda:</strong>
+        realiza la valoración utilizando los criterios de la rúbrica
+        y sustenta tus comentarios en evidencias del trabajo revisado.
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
 <script>
 (function(){
-  var component = document.getElementById("sise-dipdiev-home");
-  if(!component){ return; }
 
-  var buttons = component.querySelectorAll(".sise-nav-button");
-  var kicker = component.querySelector("#sise-dynamic-kicker");
-  var title = component.querySelector("#sise-dynamic-title");
-  var body = component.querySelector("#sise-dynamic-body");
+  var component =
+    document.getElementById("sise-dipdiev-home");
 
-  function prepareExternalLinks(container){
-    if(!container){ return; }
-    var links = container.querySelectorAll("a[href]");
-    links.forEach(function(link){
-      var href = link.getAttribute("href");
-      if(href && !href.startsWith("#") && !href.startsWith("javascript:")){
-        link.setAttribute("target","_blank");
-        link.setAttribute("rel","noopener noreferrer");
-      }
-    });
+  if(!component){
+    return;
   }
 
+
+  var buttons =
+    component.querySelectorAll(".sise-nav-button");
+
+  var kicker =
+    component.querySelector("#sise-dynamic-kicker");
+
+  var title =
+    component.querySelector("#sise-dynamic-title");
+
+  var body =
+    component.querySelector("#sise-dynamic-body");
+
+  var modal =
+    component.querySelector("#sise-coeval-modal");
+
+  var closeModalButton =
+    component.querySelector(".sise-coeval-close");
+
+
+  /* =====================================================
+     ENLACES EXTERNOS
+  ====================================================== */
+
+  function prepareExternalLinks(container){
+
+    if(!container){
+      return;
+    }
+
+    var links =
+      container.querySelectorAll("a[href]");
+
+    links.forEach(function(link){
+
+      var href =
+        link.getAttribute("href");
+
+      if(
+        href &&
+        !href.startsWith("#") &&
+        !href.startsWith("javascript:")
+      ){
+
+        link.setAttribute(
+          "target",
+          "_blank"
+        );
+
+        link.setAttribute(
+          "rel",
+          "noopener noreferrer"
+        );
+
+      }
+
+    });
+
+  }
+
+
+  /* =====================================================
+     CAMBIO DE PESTAÑA
+  ====================================================== */
+
   function changeSection(section, selectedButton){
-    var template = component.querySelector("#sise-template-" + section);
-    if(!template){ return; }
 
-    kicker.textContent = template.getAttribute("data-kicker");
-    title.textContent = template.getAttribute("data-title");
+    var template =
+      component.querySelector(
+        "#sise-template-" + section
+      );
 
-    body.style.animation = "none";
+    if(!template){
+      return;
+    }
+
+
+    kicker.textContent =
+      template.getAttribute("data-kicker");
+
+    title.textContent =
+      template.getAttribute("data-title");
+
+
+    body.style.animation =
+      "none";
+
     body.offsetHeight;
-    body.innerHTML = template.innerHTML;
-    body.style.animation = "siseFadeIn .35s ease";
+
+    body.innerHTML =
+      template.innerHTML;
+
+    body.style.animation =
+      "siseFadeIn .35s ease";
+
 
     prepareExternalLinks(body);
 
+
     buttons.forEach(function(button){
-      var isActive = button === selectedButton;
-      button.classList.toggle("active", isActive);
-      button.setAttribute("aria-selected", isActive ? "true" : "false");
+
+      var isActive =
+        button === selectedButton;
+
+      button.classList.toggle(
+        "active",
+        isActive
+      );
+
+      button.setAttribute(
+        "aria-selected",
+        isActive ? "true" : "false"
+      );
+
     });
+
   }
 
+
   buttons.forEach(function(button){
-    button.addEventListener("click", function(){
-      changeSection(button.getAttribute("data-section"), button);
-    });
+
+    button.addEventListener(
+      "click",
+      function(){
+
+        changeSection(
+          button.getAttribute("data-section"),
+          button
+        );
+
+      }
+    );
+
   });
 
+
+  /* =====================================================
+     MANUAL DE COEVALUACIÓN
+  ====================================================== */
+
+  function openCoevalManual(){
+
+    if(!modal){
+      return;
+    }
+
+    modal.classList.add(
+      "is-open"
+    );
+
+    modal.setAttribute(
+      "aria-hidden",
+      "false"
+    );
+
+    document.body.style.overflow =
+      "hidden";
+
+  }
+
+
+  function closeCoevalManual(){
+
+    if(!modal){
+      return;
+    }
+
+    modal.classList.remove(
+      "is-open"
+    );
+
+    modal.setAttribute(
+      "aria-hidden",
+      "true"
+    );
+
+    document.body.style.overflow =
+      "";
+
+  }
+
+
+  component.addEventListener(
+    "click",
+    function(event){
+
+      var manualButton =
+        event.target.closest(
+          ".sise-open-coeval"
+        );
+
+      if(manualButton){
+
+        event.preventDefault();
+
+        openCoevalManual();
+
+      }
+
+    }
+  );
+
+
+  if(closeModalButton){
+
+    closeModalButton.addEventListener(
+      "click",
+      closeCoevalManual
+    );
+
+  }
+
+
+  if(modal){
+
+    modal.addEventListener(
+      "click",
+      function(event){
+
+        if(event.target === modal){
+
+          closeCoevalManual();
+
+        }
+
+      }
+    );
+
+  }
+
+
+  document.addEventListener(
+    "keydown",
+    function(event){
+
+      if(
+        event.key === "Escape" &&
+        modal &&
+        modal.classList.contains("is-open")
+      ){
+
+        closeCoevalManual();
+
+      }
+
+    }
+  );
+
+
   prepareExternalLinks(component);
+
 })();
 </script>
 
