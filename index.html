@@ -611,88 +611,6 @@
 
 
 /* =========================================================
-   SÍLABO
-========================================================= */
-
-#sise-dipdiev-home .sise-syllabus-card{
-  position:relative;
-  overflow:hidden;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:24px;
-  margin-top:18px;
-  padding:22px 24px;
-  border:1px solid #F1D5DE;
-  border-left:6px solid var(--pink);
-  border-radius:14px;
-  background:linear-gradient(105deg,#FFF1F5 0%,#FFFFFF 70%);
-}
-
-#sise-dipdiev-home .sise-syllabus-card:after{
-  content:"";
-  position:absolute;
-  width:120px;
-  height:120px;
-  right:-48px;
-  top:-62px;
-  border:1px solid rgba(255,0,80,.14);
-  border-radius:50%;
-}
-
-#sise-dipdiev-home .sise-syllabus-info{
-  position:relative;
-  z-index:2;
-}
-
-#sise-dipdiev-home .sise-syllabus-label{
-  display:block;
-  margin-bottom:4px;
-  color:var(--pink);
-  font-size:11px;
-  font-weight:900;
-  letter-spacing:1.2px;
-  text-transform:uppercase;
-}
-
-#sise-dipdiev-home .sise-syllabus-card h3{
-  margin:0 0 5px;
-  color:#231F20;
-  font-size:21px;
-}
-
-#sise-dipdiev-home .sise-syllabus-card p{
-  margin:0;
-  color:#655C60;
-  font-size:13px;
-  line-height:1.5;
-}
-
-#sise-dipdiev-home .sise-syllabus-btn{
-  position:relative;
-  z-index:2;
-  display:inline-flex;
-  flex:0 0 auto;
-  align-items:center;
-  justify-content:center;
-  min-width:145px;
-  padding:12px 18px;
-  border-radius:9px;
-  color:#FFFFFF;
-  background:var(--dark-2);
-  text-decoration:none;
-  font-size:14px;
-  font-weight:800;
-}
-
-#sise-dipdiev-home .sise-syllabus-btn:hover{
-  color:#FFFFFF;
-  background:var(--pink);
-  transform:translateY(-2px);
-}
-
-
-/* =========================================================
    EVALUACIÓN
 ========================================================= */
 
@@ -1178,16 +1096,6 @@
     padding:24px;
   }
 
-  #sise-dipdiev-home .sise-syllabus-card{
-    display:block;
-    padding:20px;
-  }
-
-  #sise-dipdiev-home .sise-syllabus-btn{
-    width:100%;
-    margin-top:16px;
-  }
-
   #sise-dipdiev-home .sise-pass-card{
     display:block;
     text-align:center;
@@ -1284,113 +1192,60 @@
   <table class="sise-stats">
 
     <tbody>
-
       <tr>
 
         <td>
-
           <div class="sise-stat-icon">
-
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <polygon points="12 2 22 7 12 12 2 7 12 2"></polygon>
               <polyline points="2 12 12 17 22 12"></polyline>
               <polyline points="2 17 12 22 22 17"></polyline>
             </svg>
-
           </div>
 
-          <div class="sise-stat-value">
-            2 módulos
-          </div>
-
-          <p class="sise-stat-label">
-            Ruta de aprendizaje aplicada
-          </p>
-
+          <div class="sise-stat-value">2 módulos</div>
+          <p class="sise-stat-label">Ruta de aprendizaje aplicada</p>
         </td>
 
-
         <td>
-
-          <div class="sise-stat-icon">
-            ▶
-          </div>
-
-          <div class="sise-stat-value">
-            Online
-          </div>
-
-          <p class="sise-stat-label">
-            Canvas · modalidad asíncrona
-          </p>
-
+          <div class="sise-stat-icon">▶</div>
+          <div class="sise-stat-value">Online</div>
+          <p class="sise-stat-label">Canvas · modalidad asíncrona</p>
         </td>
 
-
         <td>
-
           <div class="sise-stat-icon">
-
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <circle cx="12" cy="12" r="9"></circle>
               <path d="M12 7v5l3.5 2"></path>
             </svg>
-
           </div>
 
-          <div class="sise-stat-value">
-            3 horas
-          </div>
-
-          <p class="sise-stat-label">
-            Tiempo estimado
-          </p>
-
+          <div class="sise-stat-value">3 horas</div>
+          <p class="sise-stat-label">Tiempo estimado</p>
         </td>
 
-
         <td>
-
           <div class="sise-stat-icon">
-
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <rect x="3" y="5" width="18" height="16" rx="2"></rect>
               <path d="M8 3v4"></path>
               <path d="M16 3v4"></path>
               <path d="M3 10h18"></path>
             </svg>
-
           </div>
 
-          <div class="sise-stat-value">
-            2 meses
-          </div>
-
-          <p class="sise-stat-label">
-            Vigencia del curso
-          </p>
-
+          <div class="sise-stat-value">2 meses</div>
+          <p class="sise-stat-label">Vigencia del curso</p>
         </td>
 
-
         <td>
-
-          <div class="sise-stat-icon">
-            ✓
-          </div>
-
-          <div class="sise-stat-value">
-            Certificación
-          </div>
-
-          <p class="sise-stat-label">
-            Nota mínima aprobatoria: 17
-          </p>
-
+          <div class="sise-stat-icon">✓</div>
+          <div class="sise-stat-value">Certificación</div>
+          <p class="sise-stat-label">Nota mínima aprobatoria: 17</p>
         </td>
 
       </tr>
-
     </tbody>
 
   </table>
@@ -1402,19 +1257,14 @@
      NAVEGACIÓN
 ========================================================= -->
 
-<div
-  class="sise-container"
-  id="sise-contenido-dinamico">
-
+<div class="sise-container" id="sise-contenido-dinamico">
 
   <div class="sise-intro">
-
     <p>
       <strong>Instrucción:</strong>
       selecciona uno de los botones para consultar la información.
       El contenido se mostrará en una única caja dinámica.
     </p>
-
   </div>
 
 
@@ -1422,7 +1272,6 @@
     class="sise-navigation"
     role="tablist"
     aria-label="Secciones del curso">
-
 
     <button
       type="button"
@@ -1436,7 +1285,6 @@
 
     </button>
 
-
     <button
       type="button"
       class="sise-nav-button"
@@ -1448,7 +1296,6 @@
       Módulos
 
     </button>
-
 
     <button
       type="button"
@@ -1465,15 +1312,12 @@
   </div>
 
 
-  <!-- =====================================================
-       CAJA DINÁMICA INICIAL
-  ====================================================== -->
+  <!-- CAJA DINÁMICA -->
 
   <section
     class="sise-dynamic-box"
     aria-live="polite"
     aria-atomic="true">
-
 
     <div class="sise-dynamic-header">
 
@@ -1496,7 +1340,6 @@
       class="sise-dynamic-body"
       id="sise-dynamic-body">
 
-
       <h3 class="sise-section-title">
         <span class="sise-title-number">01</span>
         Descripción del curso
@@ -1516,69 +1359,41 @@
         priorizando decisiones y acciones aplicadas sobre tu propio sílabo.
       </p>
 
-
       <h3 class="sise-section-title">
-
-        <span class="sise-title-number">
-          02
-        </span>
-
+        <span class="sise-title-number">02</span>
         ¿A quiénes está dirigido?
-
       </h3>
 
       <div class="sise-audience-card">
-
         <p>
           <strong>Docentes SISE participantes del PAC Docente</strong>,
           en modalidad online asíncrona, que buscan fortalecer la planificación
           de sus cursos desde un enfoque por competencias y centrado
           en el desempeño.
         </p>
-
       </div>
 
-
       <h3 class="sise-section-title">
-
-        <span class="sise-title-number">
-          03
-        </span>
-
+        <span class="sise-title-number">03</span>
         Logro del curso
-
       </h3>
 
-
       <div class="sise-goal-card">
-
         <p>
           Diseñarás la alineación pedagógica de un curso propio, traduciendo
           competencias y resultados de aprendizaje en desempeños observables
           y evidencias coherentes bajo la lógica del diseño inverso, para
-          planificar experiencias centradas en el desempeño en entornos
-          virtuales.
+          planificar experiencias centradas en el desempeño en entornos virtuales.
         </p>
-
       </div>
 
-
       <h3 class="sise-section-title">
-
-        <span class="sise-title-number">
-          04
-        </span>
-
+        <span class="sise-title-number">04</span>
         Competencia a desarrollar
-
       </h3>
 
-
       <div class="sise-competence">
-
-        <strong>
-          C2 · Competencias Pedagógicas
-        </strong>
+        <strong>C2 · Competencias Pedagógicas</strong>
 
         <p>
           El curso fortalece la planificación pedagógica mediante la lectura
@@ -1586,7 +1401,6 @@
           y la construcción de desempeños y evidencias coherentes con el resultado
           esperado.
         </p>
-
       </div>
 
     </div>
@@ -1594,16 +1408,13 @@
   </section>
 
 
-  <!-- =====================================================
-       SOBRE EL CURSO
-  ====================================================== -->
+  <!-- SOBRE EL CURSO -->
 
   <div
     id="sise-template-sobre-curso"
     class="sise-template"
     data-kicker="Información general"
     data-title="Conoce el propósito del curso">
-
 
     <h3 class="sise-section-title">
       <span class="sise-title-number">01</span>
@@ -1624,62 +1435,41 @@
       priorizando decisiones y acciones aplicadas sobre tu propio sílabo.
     </p>
 
-
     <h3 class="sise-section-title">
       <span class="sise-title-number">02</span>
       ¿A quiénes está dirigido?
     </h3>
 
     <div class="sise-audience-card">
-
       <p>
         <strong>Docentes SISE participantes del PAC Docente</strong>,
         en modalidad online asíncrona, que buscan fortalecer la planificación
         de sus cursos desde un enfoque por competencias y centrado
         en el desempeño.
       </p>
-
     </div>
 
-
     <h3 class="sise-section-title">
-
-      <span class="sise-title-number">
-        03
-      </span>
-
+      <span class="sise-title-number">03</span>
       Logro del curso
-
     </h3>
 
     <div class="sise-goal-card">
-
       <p>
         Diseñarás la alineación pedagógica de un curso propio, traduciendo
         competencias y resultados de aprendizaje en desempeños observables
         y evidencias coherentes bajo la lógica del diseño inverso, para
         planificar experiencias centradas en el desempeño en entornos virtuales.
       </p>
-
     </div>
 
-
     <h3 class="sise-section-title">
-
-      <span class="sise-title-number">
-        04
-      </span>
-
+      <span class="sise-title-number">04</span>
       Competencia a desarrollar
-
     </h3>
 
-
     <div class="sise-competence">
-
-      <strong>
-        C2 · Competencias Pedagógicas
-      </strong>
+      <strong>C2 · Competencias Pedagógicas</strong>
 
       <p>
         El curso fortalece la planificación pedagógica mediante la lectura
@@ -1687,15 +1477,12 @@
         y la construcción de desempeños y evidencias coherentes con el resultado
         esperado.
       </p>
-
     </div>
 
   </div>
 
 
-  <!-- =====================================================
-       MÓDULOS
-  ====================================================== -->
+  <!-- MÓDULOS -->
 
   <div
     id="sise-template-modulos"
@@ -1703,43 +1490,30 @@
     data-kicker="Ruta de aprendizaje"
     data-title="Ingresa a tus módulos">
 
-
     <p>
       Avanza por los dos módulos de manera progresiva. Primero analizarás la
       coherencia de tu sílabo y luego transformarás competencias y resultados
       de aprendizaje en desempeños y evidencias alineadas.
     </p>
 
-
     <div class="sise-modules-grid">
-
 
       <article class="sise-module-card">
 
         <div class="sise-module-top">
-
-          <div class="sise-module-number">
-            1
-          </div>
-
-          <div class="sise-module-label">
-            Módulo 1
-          </div>
-
+          <div class="sise-module-number">1</div>
+          <div class="sise-module-label">Módulo 1</div>
         </div>
-
 
         <h3>
           El sílabo como herramienta de planificación
         </h3>
-
 
         <p class="sise-module-help">
           Analiza los componentes del sílabo y su relación con el enfoque
           por competencias, reconociéndolo como herramienta de planificación
           pedagógica mediante el análisis guiado de un sílabo institucional real.
         </p>
-
 
         <a
           class="sise-module-btn"
@@ -1753,29 +1527,19 @@
       <article class="sise-module-card">
 
         <div class="sise-module-top">
-
-          <div class="sise-module-number">
-            2
-          </div>
-
-          <div class="sise-module-label">
-            Módulo 2
-          </div>
-
+          <div class="sise-module-number">2</div>
+          <div class="sise-module-label">Módulo 2</div>
         </div>
-
 
         <h3>
           De la competencia al desempeño observable
         </h3>
-
 
         <p class="sise-module-help">
           Traduce competencias y resultados en desempeños observables y construye
           la matriz de alineación integral de tu curso, aplicando diseño inverso
           y coevaluación con rúbrica.
         </p>
-
 
         <a
           class="sise-module-btn"
@@ -1800,17 +1564,16 @@
     data-kicker="Evidencias de aprendizaje"
     data-title="¿Cómo serás evaluado?">
 
-
     <p>
-      La evaluación del curso considera actividades por módulo para validar
-      conocimientos, con un peso de <strong>25% cada una</strong>; la participación
-      en el foro, con un peso total de <strong>10%</strong>; y una evaluación final
-      mediante <strong>Quizizz</strong>, con un peso de <strong>40%</strong>.
+      La evaluación del curso considera una
+      <strong>actividad del módulo 1</strong> para validar conocimientos,
+      con un peso de <strong>30%</strong>; la participación en el foro,
+      con un peso total de <strong>10%</strong>; y una evaluación final
+      mediante <strong>Quizizz</strong>, con un peso de <strong>60%</strong>.
     </p>
 
 
     <div class="sise-evaluation-grid">
-
 
       <!-- TARJETA 01 -->
 
@@ -1821,14 +1584,14 @@
         </div>
 
         <h3>
-          Actividades por módulo
+          Actividad del módulo 1
         </h3>
 
         <p>
-          En cada módulo desarrollarás una actividad orientada a
-          <strong>validar los conocimientos alcanzados</strong>.
-          Cada actividad representa el
-          <strong>25% de la nota final</strong>.
+          En el <strong>módulo 1</strong> desarrollarás una actividad
+          orientada a validar los conocimientos alcanzados.
+          Esta actividad representa el
+          <strong>30% de la nota final</strong>.
         </p>
 
       </article>
@@ -1872,9 +1635,9 @@
         <p>
           Al finalizar el curso realizarás una
           <strong>evaluación mediante Quizizz</strong> para demostrar
-          los conocimientos desarrollados a lo largo de los módulos.
+          los conocimientos desarrollados durante el curso.
           Esta evaluación representa el
-          <strong>40% de la nota final</strong>.
+          <strong>60% de la nota final</strong>.
         </p>
 
       </article>
@@ -1888,7 +1651,6 @@
           +
         </div>
 
-
         <div class="sise-optional-content">
 
           <span class="sise-optional-badge">
@@ -1900,19 +1662,17 @@
           </h3>
 
           <p>
-            Es una <strong>actividad integradora opcional</strong> que podrás ir
-            desarrollando progresivamente en cada módulo. Su propósito es permitirte
-            aplicar e integrar los aprendizajes del curso a medida que avanzas en tu
-            recorrido formativo.
+            Es una <strong>actividad integradora opcional</strong> que podrás
+            ir desarrollando progresivamente durante el curso. Su propósito
+            es permitirte aplicar e integrar los aprendizajes a medida que
+            avanzas en tu recorrido formativo.
           </p>
-
 
           <div class="sise-optional-actions">
 
             <span class="sise-optional-note">
               Actividad formativa · No tiene calificación
             </span>
-
 
             <button
               type="button"
@@ -1957,13 +1717,11 @@
   id="sise-coeval-modal"
   aria-hidden="true">
 
-
   <div
     class="sise-coeval-modal-panel"
     role="dialog"
     aria-modal="true"
     aria-labelledby="sise-coeval-modal-title">
-
 
     <div class="sise-coeval-modal-head">
 
@@ -1974,11 +1732,9 @@
         ×
       </button>
 
-
       <small>
         Guía rápida · Evaluación entre pares
       </small>
-
 
       <h3 id="sise-coeval-modal-title">
         Manual de coevaluación
@@ -1988,7 +1744,6 @@
 
 
     <div class="sise-coeval-modal-body">
-
 
       <p class="sise-coeval-modal-intro">
         La coevaluación consiste en revisar el trabajo de un compañero
@@ -2000,7 +1755,6 @@
 
       <div class="sise-manual-route">
 
-
         <div class="sise-manual-step">
 
           <div class="sise-manual-step-num">
@@ -2008,7 +1762,6 @@
           </div>
 
           <div>
-
             <h4>
               Lee la rúbrica
             </h4>
@@ -2017,7 +1770,6 @@
               Revisa los criterios, niveles de logro y descriptores antes
               de iniciar la valoración.
             </p>
-
           </div>
 
         </div>
@@ -2030,7 +1782,6 @@
           </div>
 
           <div>
-
             <h4>
               Revisa las evidencias
             </h4>
@@ -2039,7 +1790,6 @@
               Observa el trabajo presentado por tu compañero e identifica
               evidencias relacionadas con cada criterio.
             </p>
-
           </div>
 
         </div>
@@ -2052,7 +1802,6 @@
           </div>
 
           <div>
-
             <h4>
               Aplica la rúbrica
             </h4>
@@ -2061,7 +1810,6 @@
               Contrasta las evidencias con los descriptores y selecciona
               el nivel de logro correspondiente.
             </p>
-
           </div>
 
         </div>
@@ -2074,7 +1822,6 @@
           </div>
 
           <div>
-
             <h4>
               Brinda retroalimentación
             </h4>
@@ -2083,7 +1830,6 @@
               Explica brevemente qué observaste, reconoce fortalezas y señala
               una oportunidad concreta de mejora.
             </p>
-
           </div>
 
         </div>
@@ -2092,11 +1838,9 @@
 
 
       <div class="sise-manual-note">
-
         <strong>Recuerda:</strong>
         realiza la valoración utilizando los criterios de la rúbrica
         y sustenta tus comentarios en evidencias del trabajo revisado.
-
       </div>
 
     </div>
@@ -2120,7 +1864,6 @@
     return;
   }
 
-
   var buttons =
     component.querySelectorAll(".sise-nav-button");
 
@@ -2139,10 +1882,6 @@
   var closeModalButton =
     component.querySelector(".sise-coeval-close");
 
-
-  /* =====================================================
-     ENLACES EXTERNOS
-  ====================================================== */
 
   function prepareExternalLinks(container){
 
@@ -2181,10 +1920,6 @@
   }
 
 
-  /* =====================================================
-     CAMBIO DE PESTAÑA
-  ====================================================== */
-
   function changeSection(section, selectedButton){
 
     var template =
@@ -2196,13 +1931,11 @@
       return;
     }
 
-
     kicker.textContent =
       template.getAttribute("data-kicker");
 
     title.textContent =
       template.getAttribute("data-title");
-
 
     body.style.animation =
       "none";
@@ -2214,7 +1947,6 @@
 
     body.style.animation =
       "siseFadeIn .35s ease";
-
 
     prepareExternalLinks(body);
 
@@ -2255,10 +1987,6 @@
 
   });
 
-
-  /* =====================================================
-     MANUAL DE COEVALUACIÓN
-  ====================================================== */
 
   function openCoevalManual(){
 
@@ -2340,9 +2068,7 @@
       function(event){
 
         if(event.target === modal){
-
           closeCoevalManual();
-
         }
 
       }
@@ -2360,9 +2086,7 @@
         modal &&
         modal.classList.contains("is-open")
       ){
-
         closeCoevalManual();
-
       }
 
     }
